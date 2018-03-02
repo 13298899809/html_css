@@ -1,0 +1,30 @@
+p {
+    color: red;
+    font-size: 20px;
+}
+h1{
+    color: cornflowerblue;
+}
+#name{
+    color: aquamarine;
+}
+.tangshi{
+    color: green;
+}
+.wenzi{
+    font-size: 30px;
+}
+#i1,.c1,.c2 {
+    color:chartreuse;
+    font-size: 30px;
+}
+/*通配符选择器*/
+/**{
+    color: aqua;
+}*/
+/*交集选择器*/
+span.xinggong{
+    color: black;
+    font-size: 10px;
+    background-color: cornflowerblue;
+}
