@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    优先级规则
+    内联选择器：1000
+    id选择器：100
+    类或伪类：10
+    元素选择器：1
+    统配*：0
+    继承的样式：没有优先级
+    -->
+    <style type="text/css">
+        p{
+            background-color: #00FF00;
+        }
+        #p{
+            background-color: #FF00FF;
+        }
+        .p{
+            background-color: #FF0000;
+        }
+        *{
+            font-size: 50px;
+        }
+        p{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<p id="p" class="p" style="background-color: chocolate">优先级测试
+<span>我是继承的span</span></p>
+</body>
+</html>
