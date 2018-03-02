@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        a:link {color: #FF0000}		/* 未访问的链接 */
+        a:visited {color: #00FF00}	/* 已访问的链接 */
+        a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */
+        a:active {color: #0000FF}	/* 选定的链接 */
+        p:hover {color: #0000FF}	/* 选定的链接 */
+        #text:focus{background-color: #00FF00}  /*向拥有键盘输入焦点的元素添加样式。*/
+        p:first-letter{color: #00FF00}  /*使用伪元素为元素的第一个字符设置样式*/
+
+    </style>
+</head>
+<body>
+<!--ie6 不支持对链接以外的元素设置 active hover-->
+<a href="http://www.baidu.com" id="a1">百度一下</a></br>
+<a href="http://www.baidu12121.com" id="a2">百度一下12121</a>
+<p>谁在悬崖沏一壶茶</p>
+<input type="text" id="text"/>
+<!--使用伪元素为元素的第一个字符设置样式-->
+<p>温热前世的牵挂</p>
+</body>
+</html>
