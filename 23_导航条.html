@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        ui{
+
+            list-style-type: none; /*list-style-type:none - 移除列表前小标志。一个导航栏并不需要列表标记*/
+            margin: 0;  /*移除浏览器的默认设置将边距和填充设置为0*/
+            padding: 0; /*移除浏览器的默认设置将边距和填充设置为0*/
+        }
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        /*浮动 <li>元素，并指定为 <a>元素的宽度：*/
+        li
+        {
+            float:left;
+            /*display:inline; -默认情况下，<li>元素是块元素。在这里，
+            我们删除换行符之前和之后每个列表项，以显示一行。*/
+            display:inline;
+        }
+        a{
+            display:block;
+            width:60px;
+        }
+    </style>
+</head>
+<body>
+<ui>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">新闻</a></li>
+    <li><a href="#">关于</a></li>
+    <li><a href="#">联系</a></li>
+</ui>
+</body>
+</html>
