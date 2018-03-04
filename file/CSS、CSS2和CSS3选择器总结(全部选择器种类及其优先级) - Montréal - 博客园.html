@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://www.cnblogs.com/iifranky7/p/5297036.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/bundle-sea.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/bundle-sea-mobile.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/iifranky7/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/iifranky7/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/iifranky7/wlwmanifest.xml">
+<script async="" src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/analytics.js.下载"></script><script src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/jquery-2.2.0.min.js.下载"></script>
+<script type="text/javascript">var currentBlogApp = 'iifranky7', cb_enable_mathjax=false;var isLogined=false;</script>
+<script src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="header">
+	
+<!--done-->
+<div class="header">
+	<div class="headerText">
+		<a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/iifranky7/">Montréal</a><br>
+		——Montreal
+	</div>
+</div>
+
+</div>
+
+<div id="mytopmenu">
+	
+		<div id="mylinks"><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a> &nbsp;
+<a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/iifranky7/">首页</a> &nbsp;
+<a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a> &nbsp;
+<a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/Montr%26%23233%3Bal">联系</a> &nbsp;
+<a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/iifranky7/rss">订阅</a><a id="blog_nav_rss_image" href="http://www.cnblogs.com/iifranky7/rss"><img src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/xml.gif" alt="订阅"></a>&nbsp;
+<a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a>
+</div>
+		<div id="mystats"><div id="blog_stats">
+随笔-42&nbsp;
+评论-10&nbsp;
+文章-0&nbsp;
+<!--trackbacks-0-->
+</div></div>
+	
+</div>
+<div id="centercontent">
+	
+<div id="post_detail">
+<div class="post">
+	<h1 class="postTitle"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/iifranky7/p/5297036.html">CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级)</a></h1>
+	<div id="cnblogs_post_body" class="blogpost-body"><p><span style="font-size: 18pt;"><strong><span style="font-family: &#39;Microsoft YaHei&#39;;">选择器种类罗列：</span></strong></span></p>
+<div class="bct fc05 fc11 nbw-blog ztag">
+<div>
+<h3><span style="font-size: large;">1.基础的选择器</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">
+<p align="left">选择器</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="24%">
+<p align="left">*</p>
+</td>
+<td valign="top" width="43%">
+<p align="left">通用元素选择器，匹配任何元素</p>
+</td>
+<td valign="top" width="32%">
+<p align="left">* { margin:0; padding:0; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="24%">
+<p align="left">E</p>
+</td>
+<td valign="top" width="43%">
+<p align="left">标签选择器，匹配所有使用E标签的元素</p>
+</td>
+<td valign="top" width="32%">
+<p align="left">p { font-size:2em; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="24%">
+<p align="left">.info和E.info</p>
+</td>
+<td valign="top" width="43%">
+<p align="left">class选择器，匹配所有class属性中包含info的元素</p>
+</td>
+<td valign="top" width="32%">
+<p align="left">.info { background:#ff0; }</p>
+<p>p.info { background:#ff0; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="24%">
+<p align="left">#info和E#info</p>
+</td>
+<td valign="top" width="43%">
+<p align="left">id选择器，匹配所有id属性等于footer的元素</p>
+</td>
+<td valign="top" width="32%">
+<p align="left">#info { background:#ff0; }</p>
+<p>p#info { background:#ff0; }</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">2.组合选择器</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E,F</p>
+</td>
+<td valign="top" width="440">
+<p align="left">多元素选择器，同时匹配所有E元素或F元素，E和F之间用逗号分隔</p>
+</td>
+<td valign="top" width="255">
+<p align="left">Div,p { color:#f00; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E F</p>
+</td>
+<td valign="top" width="440">
+<p align="left">后代元素选择器，匹配所有属于E元素后代的F元素，E和F之间用空格分隔</p>
+</td>
+<td valign="top" width="255">
+<p align="left">#nav li { display:inline; }</p>
+<p>li a { font-weight:bold; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E &gt; F</p>
+</td>
+<td valign="top" width="440">
+<p align="left">子元素选择器，匹配所有E元素的子元素F</p>
+</td>
+<td valign="top" width="255">
+<p align="left">div &gt; strong { color:#f00; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E + F</p>
+</td>
+<td valign="top" width="440">
+<p align="left">毗邻元素选择器，匹配所有紧随E元素之后的同级元素F</p>
+</td>
+<td valign="top" width="255">
+<p align="left">p + p { color:#f00; }</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">3.CSS 2.1 属性选择器</span><span id="more-1635"></span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att]</p>
+</td>
+<td valign="top" width="439">
+<p align="left">匹配所有具有att属性的E元素，不考虑它的值。（注意：E在此处可以省略，比如“[cheacked]”。以下同。）</p>
+</td>
+<td valign="top" width="272">
+<p align="left">p[title] { color:#f00; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att=val]</p>
+</td>
+<td valign="top" width="439">
+<p align="left">匹配所有att属性等于“val”的E元素</p>
+</td>
+<td valign="top" width="272">
+<p align="left">div[class=”error”] { color:#f00; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att~=val]</p>
+</td>
+<td valign="top" width="439">
+<p align="left">匹配所有att属性具有多个空格分隔的值、其中一个值等于“val”的E元素</p>
+</td>
+<td valign="top" width="272">
+<p align="left">td[class~=”name”] { color:#f00; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att|=val]</p>
+</td>
+<td valign="top" width="439">
+<p align="left">匹配所有att属性具有多个连字号分隔（hyphen-separated）的值、其中一个值以“val”开头的E元素，主要用于lang属性，比如“en”、“en-us”、“en-gb”等等</p>
+</td>
+<td valign="top" width="272">
+<p align="left">p[lang|=en] { color:#f00; }</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注：CSS 2.1&nbsp;</strong><strong>属性选择器还有一个特点就是使用多个选择器，同时满足这多个选择器：</strong>blockquote[class=quote][cite] { color:#f00; }</p>
+<p>&nbsp;</p>
+<h3><span style="font-size: large;">4.CSS 2.1 中的伪类</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:first-child</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配父元素的第一个子元素</p>
+</td>
+<td rowspan="7" valign="top" width="274">
+<p align="left">p:first-child { font-style:italic; }</p>
+<p>input[type=text]:focus { color:#000; background:#ffe; }</p>
+<p>input[type=text]:focus:hover { background:#fff; }</p>
+<p>q:lang(sv) { quotes: “\201D” “\201D” “\2019″ “\2019″; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:link</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配所有未被点击的链接</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:visited</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配所有已被点击的链接</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:active</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配鼠标已经其上按下、还没有释放的E元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:hover</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配鼠标悬停其上的E元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:focus</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配获得当前焦点的E元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:lang(c)</p>
+</td>
+<td valign="top" width="388">
+<p align="left">匹配lang属性等于c的E元素</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">5.CSS 2.1中的伪元素</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:first-line</p>
+</td>
+<td valign="top" width="303">
+<p align="left">匹配E元素的第一行</p>
+</td>
+<td rowspan="4" valign="top" width="274">
+<p align="left">p:first-line { font-weight:bold; color;#600; }</p>
+<p>.preamble:first-letter { font-size:1.5em; font-weight:bold; }</p>
+<p>.cbb:before { content:”"; display:block; height:17px; width:18px; background:url(top.png) no-repeat 0 0; margin:0 0 0 -18px; }</p>
+<p>a:link:after { content: ” (” attr(href) “) “; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:first-letter</p>
+</td>
+<td valign="top" width="303">
+<p align="left">匹配E元素的第一个字母</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:before</p>
+</td>
+<td valign="top" width="303">
+<p align="left">在E元素之前插入生成的内容</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:after</p>
+</td>
+<td valign="top" width="303">
+<p align="left">在E元素之后插入生成的内容</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">6.CSS 3的同级元素通用选择器</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">
+<p align="left">选择器</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E ~ F</p>
+</td>
+<td valign="top" width="398">
+<p align="left">匹配任何在E元素之后的同级F元素</p>
+</td>
+<td valign="top" width="211">
+<p align="left">p ~ ul { background:#ff0; }</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">7．CSS 3 属性选择器</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att^=”val”]</p>
+</td>
+<td valign="top" width="290">
+<p align="left">属性att的值以”val”开头的元素</p>
+</td>
+<td rowspan="3" valign="top" width="223">
+<p align="left">div[id^="nav"] { background:#ff0; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att$=”val”]</p>
+</td>
+<td valign="top" width="290">
+<p align="left">属性att的值以”val”结尾的元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E[att*=”val”]</p>
+</td>
+<td valign="top" width="290">
+<p align="left">属性att的值包含”val”字符串的元素</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">8. CSS 3中与用户界面有关的伪类</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:enabled</p>
+</td>
+<td valign="top" width="367">
+<p align="left">匹配表单中激活的元素</p>
+</td>
+<td rowspan="4" valign="top" width="287">
+<p align="left">input[type="text"]:disabled { background:#ddd;}</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:disabled</p>
+</td>
+<td valign="top" width="367">
+<p align="left">匹配表单中禁用的元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:checked</p>
+</td>
+<td valign="top" width="367">
+<p align="left">匹配表单中被选中的radio（单选框）或checkbox（复选框）元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E::selection</p>
+</td>
+<td valign="top" width="367">
+<p align="left">匹配用户当前选中的元素</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">9. CSS 3中的结构性伪类</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:root</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配文档的根元素，对于HTML文档，就是HTML元素</p>
+</td>
+<td rowspan="11" valign="top" width="252">
+<p align="left">p:nth-child(3) { color:#f00; }</p>
+<p>p:nth-child(odd) { color:#f00; }</p>
+<p>p:nth-child(even) { color:#f00; }</p>
+<p>p:nth-child(3n+0) { color:#f00; }</p>
+<p>p:nth-child(3n) { color:#f00; }</p>
+<p>tr:nth-child(2n+11) { background:#ff0; }</p>
+<p>tr:nth-last-child(2) { background:#ff0; }</p>
+<p>p:last-child { background:#ff0; }</p>
+<p>p:only-child { background:#ff0; }</p>
+<p>p:empty { background:#ff0; }</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:nth-child(n)</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配其父元素的第n个子元素，第一个编号为1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:nth-last-child(n)</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配其父元素的倒数第n个子元素，第一个编号为1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:nth-of-type(n)</p>
+</td>
+<td valign="top" width="393">
+<p align="left">与:nth-child()作用类似，但是仅匹配使用同种标签的元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:nth-last-of-type(n)</p>
+</td>
+<td valign="top" width="393">
+<p align="left">与:nth-last-child() 作用类似，但是仅匹配使用同种标签的元素</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:last-child</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配父元素的最后一个子元素，等同于:nth-last-child(1)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:first-of-type</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配父元素下使用同种标签的第一个子元素，等同于:nth-of-type(1)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:last-of-type</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配父元素下使用同种标签的最后一个子元素，等同于:nth-last-of-type(1)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:only-child</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配父元素下仅有的一个子元素，等同于:first-child:last-child或 :nth-child(1):nth-last-child(1)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:only-of-type</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配父元素下使用同种标签的唯一一个子元素，等同于:first-of-type:last-of-type或 :nth-of-type(1):nth-last-of-type(1)</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:empty</p>
+</td>
+<td valign="top" width="393">
+<p align="left">匹配一个不包含任何子元素的元素，注意，文本节点也被看作子元素</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">10.CSS 3的反选伪类</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">
+<p align="left">示例</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:not(s)</p>
+</td>
+<td valign="top" width="390">
+<p align="left">匹配不符合当前选择器的任何元素</p>
+</td>
+<td valign="top" width="255">
+<p align="left">:not(p) { border:1px solid #ccc; }</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><span style="font-size: large;">11. CSS 3中的 :target 伪类</span></h3>
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="20%">选择器</td>
+<td valign="top" width="40%">
+<p align="left">含义</p>
+</td>
+<td valign="top" width="40%">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">
+<p align="left">E:target</p>
+</td>
+<td valign="top" width="417">
+<p align="left">匹配文档中特定”id”点击后的效果</p>
+</td>
+<td valign="top" width="161">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="nbw-blog-end">&nbsp;</div>
+<div>&nbsp;&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<div id="$_suggestedreading2" class="suggestedreading fc03 clearfix"><span style="font-family: &#39;Microsoft YaHei&#39;;"><strong><span style="font-size: 18pt;">选择器优先级排序：</span></strong></span></div>
+<div class="suggestedreading fc03 clearfix">
+<p>关于选择器的优先级，Google 资深web开发工程师Steve Souders对CSS选择器的效率从高到低做了一个排序(效率排序，和权重不是一回事)：</p>
+<p>1.id选择器（#myid）</p>
+<p>2.类选择器（.myclassname）</p>
+<p>3.标签选择器（div,h1,p）</p>
+<p>4.相邻选择器（h1+p）</p>
+<p>5.子选择器（ul &lt; li）</p>
+<p>6.后代选择器（li a）</p>
+<p>7.通配符选择器（*）</p>
+<p>8.属性选择器（a[rel="external"]）</p>
+<p>9.伪类选择器（a:hover,li:nth-child）</p>
+<p>上面九种选择器中ID选择器的效率是最高，而伪类选择器的效率则是最低</p>
+<p>&nbsp;</p>
+<p><strong>计算指定选择器的优先级:重新认识CSS的权重(权重排序，和效率不是一回事)</strong></p>
+<p>1.通配选择符的权值 0,0,0,0<br>2.标签的权值为 0,0,0,1<br>3.类的权值为 0,0,1,0<br>4.属性选择的权值为0,0,1,0<br>5.伪类选择的权值为 0,0,1,0<br>6.伪对象选择的权值为 0,0,0,1<br>7.ID的权值为 0,1,0,0<br>8.important的权值为最高 1,0,0,0</p>
+<p><strong>归纳为!important &gt; 内联 &gt; ID &gt; 类 &gt; &nbsp;伪类 | 属性选择 &gt; <strong>标签 |&nbsp;</strong>伪对象 &gt;&nbsp;通配符 &gt; 继承</strong></p>
+<p>&nbsp;</p>
+</div>
+</div></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(5297036,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;04cb37b7-6b3d-e411-b908-9dcfd8948a71&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/iifranky7/" target="_blank"><img src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/sample_face.gif" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/iifranky7/">Montréal</a><br>
+            <a href="http://home.cnblogs.com/u/iifranky7/followees">关注 - 0</a><br>
+            <a href="http://home.cnblogs.com/u/iifranky7/followers">粉丝 - 10</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;04cb37b7-6b3d-e411-b908-9dcfd8948a71&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(5297036,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">1</span>
+    </div>
+    <div class="buryit" onclick="votePost(5297036,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/iifranky7/p/5296135.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/iifranky7/p/5296135.html" title="发布于2016-03-19 19:57">CSS常用十大技巧</a><br><a href="http://www.cnblogs.com/iifranky7/p/5301496.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/iifranky7/p/5301496.html" title="发布于2016-03-21 13:13">CSS hack大全</a><br></div>
+</div>
+
+
+	<div class="postDesc">posted on <span id="post-date">2016-03-20 01:32</span> <a href="http://www.cnblogs.com/iifranky7/">Montréal</a> 阅读(<span id="post_view_count">741</span>) 评论(<span id="post_comment_count">0</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=5297036" rel="nofollow">编辑</a> <a href="https://www.cnblogs.com/iifranky7/p/5297036.html#" onclick="AddToWz(5297036);return false;">收藏</a></div>
+</div>
+<script type="text/javascript">var allowComments=true,cb_blogId=198238,cb_entryId=5297036,cb_blogApp=currentBlogApp,cb_blogUserGuid='04cb37b7-6b3d-e411-b908-9dcfd8948a71',cb_entryCreatedDate='2016/3/20 1:32:00';loadViewCount(cb_entryId);var cb_postType=1;</script>
+
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="https://www.cnblogs.com/iifranky7/p/5297036.html#" onclick="return RefreshPage();">刷新页面</a><a href="https://www.cnblogs.com/iifranky7/p/5297036.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank">【推荐】超50万VC++源码: 大型工控、组态\仿真、建模CAD源码2018！</a><br><a href="https://www.cnblogs.com/cmt/p/8462669.html" target="_blank">【活动】杭州云栖·2050大会-全世界年青人因科技而团聚-源点</a><br><a href="https://dnspod.cloud.tencent.com/act/yearendsales?from=IT&amp;fromSource=gwzcw.781137.781137.781137" target="_blank">【抢购】新注册用户域名抢购1元起</a><br></div>
+<div id="opt_under_post"></div>
+<div id="cnblogs_c1" class="c_ad_block"><a href="https://dnspod.cloud.tencent.com/act/weapp?fromSource=gwzcw.781158.781158.781158" target="_blank"><img width="300" height="250" src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/24442-20180228164005211-881957482.jpg" alt="tencent0228"></a></div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="https://news.cnblogs.com/n/590967/" target="_blank">马云雪中与交警合影照热传 当事交警：这是对我们工作的认可</a><br> ·  <a href="https://news.cnblogs.com/n/590962/" target="_blank">姚劲波两会建议：规范租房市场，保障“租”有所居</a><br> ·  <a href="https://news.cnblogs.com/n/590959/" target="_blank">马化腾建言两会 推动数字中国与粤港澳大湾区建设</a><br> ·  <a href="https://news.cnblogs.com/n/590957/" target="_blank">Netflix股价首次突破300美元 创历史新高</a><br> ·  <a href="https://news.cnblogs.com/n/590955/" target="_blank">亚马逊10亿美元收购Ring为智能家居厂商敲起警钟</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="cnblogs_c2" class="c_ad_block"><a href="http://click.aliyun.com/m/34770/" target="_blank"><img width="468" height="60" src="./CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级) - Montréal - 博客园_files/24442-20171208101900738-116140477.jpg" alt="阿里云C2-1208"></a></div>
+<div id="under_post_kb"><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/575255/" target="_blank">写给自学者的入门指南</a><br> ·  <a href="http://kb.cnblogs.com/page/578690/" target="_blank">和程序员谈恋爱</a><br> ·  <a href="http://kb.cnblogs.com/page/585734/" target="_blank">学会学习</a><br> ·  <a href="http://kb.cnblogs.com/page/588938/" target="_blank">优秀技术人的管理陷阱</a><br> ·  <a href="http://kb.cnblogs.com/page/590141/" target="_blank">作为一个程序员，数学对你到底有多重要</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+</div>
+<div id="leftcontent">
+	
+		<div id="leftcontentcontainer">
+			
+<!--done-->
+<div class="newsItem">
+	<div id="blog-news"><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/iifranky7/">Montréal</a><br>园龄：<a href="https://home.cnblogs.com/u/iifranky7/" title="入园时间：2014-09-16">3年5个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/iifranky7/followers/">10</a><br>关注：<a href="https://home.cnblogs.com/u/iifranky7/followees/">0</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;04cb37b7-6b3d-e411-b908-9dcfd8948a71&#39;)">+加关注</a></div><script>getFollowStatus('04cb37b7-6b3d-e411-b908-9dcfd8948a71')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2018/02/01&#39;);return false;">&lt;</a></td><td align="center">2018年3月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2018/04/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">25</td><td class="CalOtherMonthDay" align="center">26</td><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td align="center">1</td><td align="center">2</td><td class="CalWeekendDay" align="center">3</td></tr><tr><td class="CalTodayDay" align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td align="center">8</td><td align="center">9</td><td class="CalWeekendDay" align="center">10</td></tr><tr><td class="CalWeekendDay" align="center">11</td><td align="center">12</td><td align="center">13</td><td align="center">14</td><td align="center">15</td><td align="center">16</td><td class="CalWeekendDay" align="center">17</td></tr><tr><td class="CalWeekendDay" align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td align="center">22</td><td align="center">23</td><td class="CalWeekendDay" align="center">24</td></tr><tr><td class="CalWeekendDay" align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td align="center">29</td><td align="center">30</td><td class="CalWeekendDay" align="center">31</td></tr><tr><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script><br>
+			<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block">
+<div id="sidebar_search" class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="sidebar_search_box">
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+</div>
+
+</div><div id="sidebar_shortcut" class="sidebar-block">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/iifranky7/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="http://www.cnblogs.com/iifranky7/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="http://www.cnblogs.com/iifranky7/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="http://www.cnblogs.com/iifranky7/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="http://www.cnblogs.com/iifranky7/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+
+</div></div><div id="sidebar_toptags" class="sidebar-block"></div><div id="sidebar_categories">
+		<h3 class="catListTitle">随笔档案</h3>
+		
+				<ul class="catList">
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_0" class="listitem" href="http://www.cnblogs.com/iifranky7/archive/2016/10.html">2016年10月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_1" class="listitem" href="http://www.cnblogs.com/iifranky7/archive/2016/07.html">2016年7月 (1)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_2" class="listitem" href="http://www.cnblogs.com/iifranky7/archive/2016/05.html">2016年5月 (6)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_3" class="listitem" href="http://www.cnblogs.com/iifranky7/archive/2016/04.html">2016年4月 (14)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_4" class="listitem" href="http://www.cnblogs.com/iifranky7/archive/2016/03.html">2016年3月 (16)</a></li>
+			
+				<li class="catListItem"> <a id="CatList_LinkList_0_Link_5" class="listitem" href="http://www.cnblogs.com/iifranky7/archive/2014/09.html">2014年9月 (4)</a></li>
+			
+				</ul>
+			
+	
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<h3 class="catListTitle">最新评论</h3>
+<div class="RecentComment" id="RecentComments">
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/iifranky7/p/5296135.html#3385633">1. Re:CSS常用十大技巧</a></li>
+        <li class="recent_comment_body">@魂断酆都那个是css叁的属性，老版本浏览器不支持。...</li>
+        <li class="recent_comment_author">--蒙城の月光</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/iifranky7/p/5296135.html#3385627">2. Re:CSS常用十大技巧</a></li>
+        <li class="recent_comment_body">最后一个滚动条是怎么设置成功的没有效果呢</li>
+        <li class="recent_comment_author">--魂断酆都</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/iifranky7/p/3985680.html#3043478">3. Re:AppServ的安装与配置</a></li>
+        <li class="recent_comment_body">不知是什么问题，怎么解决？原来我第一次装的时候没问题，appserve里面的东西都能用</li>
+        <li class="recent_comment_author">--poplar_</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/iifranky7/p/3985680.html#3043473">4. Re:AppServ的安装与配置</a></li>
+        <li class="recent_comment_body">我把appserve 都删了，又照着博主您说的装了一遍最新版的appserve(里面的phpmyadmin还是旧版)。安装完后appserve中写php单独脚本可以运行,mysql也可以单独在命令行使......</li>
+        <li class="recent_comment_author">--poplar_</li>
+        <li class="recent_comment_title"><a href="http://www.cnblogs.com/iifranky7/p/3985680.html#3043414">5. Re:AppServ的安装与配置</a></li>
+        <li class="recent_comment_body">@poplar_不要用电脑管家，那个删不干净的，用强力一点的软件。还有问题就有可能是那个最新版本的phpmyadmin的问题了，如果换成旧的可以的话。...</li>
+        <li class="recent_comment_author">--蒙城の月光</li>
+</ul>
+</div>
+</div>
+</div></div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<h3 class="catListTitle">阅读排行榜</h3>
+<div class="RecentComment" id="TopViewPosts"> 
+	<div id="TopViewPostsBlock"><ul><li><a href="http://www.cnblogs.com/iifranky7/p/3985680.html">1. AppServ的安装与配置(2724)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5649570.html">2. jQuery 3.0：10个炫酷新功能(1061)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5297036.html">3. CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级)(741)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5338090.html">4. 全栈工程师眼中的HTTP(720)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5321437.html">5. 2016年新鲜出炉的20款网页开发工具推荐(345)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<h3 class="catListTitle">评论排行榜</h3>
+<div class="RecentComment" id="TopCommentsPosts">
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/iifranky7/p/3985680.html">1. AppServ的安装与配置(8)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5296135.html">2. CSS常用十大技巧(2)</a></li></ul></div>
+</div></div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div class="RecentComment">
+	<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/iifranky7/p/5297036.html">1. CSS、CSS2和CSS3选择器总结(全部选择器种类及其优先级)(1)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5296135.html">2. CSS常用十大技巧(1)</a></li><li><a href="http://www.cnblogs.com/iifranky7/p/5338090.html">3. 全栈工程师眼中的HTTP(1)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script></div>
+	
+</div>
+
+<!--done-->
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com/">博客园</a>	模板提供：<a href="http://blog.hjenglish.com/">沪江博客</a>
+	Copyright ©2018 Montréal
+</div>
+
+
+
+
+
+</body></html>
