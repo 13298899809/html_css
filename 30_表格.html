@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    /*
+    border-collapse 设置是否把表格边框合并为单一的边框。
+    border-spacing 设置分隔单元格边框的距离。
+    caption-side 设置表格标题的位置。
+    empty-cells 设置是否显示表格中的空单元格。
+    table-layout 设置显示单元、行和列的算法。
+    */
+    table,tr,td
+    {
+        width: 200px;
+        height: 20px;
+        text-align: center;
+        empty-cells: hide;
+        border:1px solid black;
+    }
+    table tr:nth-child(even){background-color: #FF00FF}
+    table tr:nth-child(odd){background-color: #00FF00}
+    table tr:hover{background-color: orange}
+</style>
+<body>
+<table>
+    <tr>
+        <!--th 字体加粗-->
+        <th>姓名</th><th>性别</th><th>年龄</th>
+    </tr>
+    <tr>                                <!--占据两行-->
+        <td>张三</td><td>男</td><td rowspan="2">23</td>
+    </tr>
+    <tr>                <!--占据两列-->
+        <td>王五</td><td>男</td>
+    </tr>
+    <tr>                <!--占据两列-->
+        <td>李四</td><td colspan="2">男</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+    </tr>
+    <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+    </tr>
+    <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+    </tr>
+</table>
+</body>
+</html>
