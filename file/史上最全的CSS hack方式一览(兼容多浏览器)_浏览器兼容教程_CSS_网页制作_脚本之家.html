@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://www.jb51.net/css/493362.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK"><script type="text/javascript" charset="utf-8" async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/pa_lu_nobtn_inviewshow.app.js.下载"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<title>史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家</title>
+<meta name="keywords" content="CSS,hacker">
+<meta name="description" content="为了获得统一的页面效果，就需要针对不同的浏览器或不同版本写特定的CSS样式，我们把这个针对不同的浏览器/不同版本写相应的CSS code的过程，叫做CSS hack!">
+<link rel="alternate" media="only screen and(max-width: 640px)" href="https://m.jb51.net/css/493362.html">
+<meta http-equiv="mobile-agent" content="format=html5; url=https://m.jb51.net/css/493362.html">
+<meta http-equiv="mobile-agent" content="format=xhtml; url=https://m.jb51.net/css/493362.html">
+<script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/hm.js.下载"></script><script type="text/javascript" async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/dynamicFloat.js.下载"></script><script type="text/javascript" async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/pr.js.下载"></script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ca-pub-6384567588307613.js.下载"></script><script type="text/javascript" async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/cwaeqau.js.下载"></script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/push.js.下载"></script><script type="text/javascript">
+var tougao="1";var downlm="art";var ourl="";
+(function(){var reWriteUrl=function(url){if(url){var Splits=url.split("/"),siteName=window.location.pathname;if(typeof siteName!=="undefined"){return"https://m.jb51.net"+siteName}}};if(/Android|webOS|iPhone|iPad|Windows Phone|iPod|BlackBerry|SymbianOS|Nokia|Mobile/i.test(navigator.userAgent)){var url=window.location.href;var pathname=window.location.pathname;if(url.indexOf("?pc")<0){try{window.location.href=reWriteUrl(url)}catch(e){}}}})();
+</script>
+<link type="text/css" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/base.css" rel="stylesheet">
+<link type="text/css" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/common.css" rel="stylesheet">
+<script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/jquery.min.js.下载"></script>
+<script>
+if (!window.jQuery) {
+	var script = document.createElement('script');
+	script.src = "/skin/js/jquery.js";
+	document.body.appendChild(script);}
+</script>
+<script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/function.js.下载"></script>
+<link rel="preload" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/integrator.js.下载" as="script"><script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/integrator.js.下载"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/version-v3.js.下载"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/cookie"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/adapter.min.js.下载"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/cyrHH3dwi"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/version.js.下载"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/cookie(1)"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/cyrHH3dwi(1)"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/event"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/sea.v2.2.0.js.下载"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/app-build.js.下载"></script><link rel="stylesheet" type="text/css" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/upload-img.css"><style id="changyanCss">#SOHUCS{clear:both;min-height:320;_height:320px;overflow:visible;}#SOHUCS iframe{width:100%;min-height:320px;_height:320px;}</style><link charset="utf-8" rel="stylesheet" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/changyan2.css"><link charset="utf-8" rel="stylesheet" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/default.css"><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/main.js.下载"></script><script type="text/javascript" charset="UTF-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/render-pc.js.下载"></script></head>
+<body><div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/o.html" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div>
+<!--topTools Start -->
+<div class="topTools">
+    <div class="wrap clear_fix">
+		<div class="topToolsLeft">
+			<a href="http://www.jb51.net/" target="_blank">脚本之家</a>
+			<a href="http://s.jb51.net/" target="_blank" rel="nofollow">服务器常用软件</a>
+		<a href="https://www.yuanshichang.com/" target="_blank" style="color:red">源市场</a></div>
+		<div class="right">
+			<ul>
+				<li><i class="sprite md left"></i><a target="_blank" href="https://m.jb51.net/" rel="nofollow">手机版</a></li>
+				<li><i class="sprite tg left"></i><a href="http://tougao.jb51.net/" rel="nofollow" target="_blank">投稿中心</a></li>
+				<li id="wxHide"><i class="sprite wx left"></i><a href="http://www.jb51.net/css/493362.html#" target="_blank">关注微信</a>
+					<div id="wxShow" class="wxHide_box"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/erwm.jpg" alt="扫一扫" width="84" hight="84" data-baiduimageplus-ignore=""></div>
+				</li>
+			</ul>
+			<!--快捷导航 开始 -->
+			<div class="text_d right" id="navHide">
+				<a href="javascript:void(0);">快捷导航<i id="icon" class="sprite arrowRight"></i></a>
+				<div id="navBox" class="webNav">
+					<div class="dealList clear_fix">
+						<h4><a href="http://www.jb51.net/softs/" target="_self" rel="nofollow">软件下载</a></h4>
+						<dl>
+							<dd>
+								<a href="http://www.jb51.net/softs/android.html" target="_blank" rel="nofollow">android软件</a>
+								<a href="http://www.jb51.net/softs/mac.html" target="_blank" rel="nofollow">MAC软件</a>
+								<a href="http://www.jb51.net/fonts/" target="_blank" rel="nofollow">字体下载</a> 
+								<a href="http://www.jb51.net/dll/" target="_blank" rel="nofollow">DLL下载</a>
+								<a href="http://www.jb51.net/zt/php-dev.htm" target="_blank" rel="nofollow">php开发工具</a>
+							</dd>
+						</dl>
+					</div>
+					
+					<div class="dealList clear_fix">
+						<h4><a href="http://www.jb51.net/codes/" target="_blank" rel="nofollow">源码下载</a></h4>
+						<dl>
+							<dd>
+								<a href="http://www.jb51.net/codes/asp.html" target="_blank" rel="nofollow">asp源码</a>
+								<a href="http://www.jb51.net/codes/php.html" target="_blank" rel="nofollow">php源码</a>
+								<a href="http://www.jb51.net/codes/aspnet.html" target="_blank" rel="nofollow">asp.net源码</a>
+								<a href="http://www.jb51.net/codes/jsp.html" target="_blank" rel="nofollow">jsp源码</a>
+								<a href="http://www.jb51.net/codes/editor.html" target="_blank" rel="nofollow">网页编辑器</a>
+								<a href="http://www.jb51.net/codes/list123_1.html" target="_blank" rel="nofollow">数据库管理</a>
+							</dd>
+						</dl>
+					</div>
+					
+					<div class="dealList clear_fix">
+						<h4><a href="http://tools.jb51.net/" target="_blank">在线工具</a></h4>
+						<dl>
+							<dd>
+								<a href="http://www.jb51.net/shouce/" target="_blank" rel="nofollow">在线手册</a>
+								<a href="http://www.jb51.net/tools/cssyasuo.shtml" target="_blank" rel="nofollow">CSS格式化</a>
+								<a href="http://tools.jb51.net/tools/js_geshihua.asp" target="_blank" rel="nofollow">JS格式化</a>
+								<a href="http://www.jb51.net/tools/html-js.htm" target="_blank" rel="nofollow">Html转化为Js</a>
+								<a href="http://tools.jb51.net/regex/javascript" target="_blank" rel="nofollow">js正则表达式</a>
+							</dd>
+						</dl>
+					</div>
+					
+				</div>
+			</div>
+			<!--快捷导航 结束 -->
+		</div>
+    </div>
+</div>
+<!--topTools end -->
+
+<div class="header mb10">
+	<!-- Logo start -->
+	<div class="wrap">
+		<div class="mtb10 clearfix">
+		  <div class="logo"><a href="http://www.jb51.net/"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/logo.gif" title="脚本之家" alt="脚本之家"></a></div>
+		  <div class="logom fl"><a href="http://www.yuntongxun.com/api/im.html#tab1?ly=jbzj" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/yuntongxun.jpg" width="370" height="60"></a>
+</div>
+		  <div class="logor fr"><a href="http://tr.brands-sale.ru/d46a9eab-af4a-49c8-8d2b-4c9becefa0e1" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/Mackeeper.gif" width="370" height="60"></a>
+</div>
+		</div>
+	</div>
+	<!--Logo end -->
+	
+	<!-- 导航开始 -->
+	<div class="nav_top clearfix">
+		<ul>
+			<li><a href="http://www.jb51.net/">网站首页</a></li>
+			<li><a href="http://www.jb51.net/web/">网页制作</a></li>
+			<li><a href="http://www.jb51.net/list/index_1.htm">网络编程</a></li>
+			<li><a href="http://www.jb51.net/list/index_96.htm">脚本专栏</a></li>
+			<li><a href="http://www.jb51.net/jiaoben/">脚本下载</a></li>
+			<li><a href="http://www.jb51.net/list/index_104.htm">数据库</a></li>
+			<li><a href="http://www.jb51.net/cms/">CMS教程</a></li>
+			<li><a href="http://www.jb51.net/books/">电子书籍</a></li>
+			<li><a href="http://www.jb51.net/pingmian/">平面设计</a></li>
+			<li><a href="http://www.jb51.net/media/">媒体动画</a></li>
+			<li><p><i>其它</i><span>
+				<a href="http://www.jb51.net/os/">操作系统</a>
+				<a href="http://www.jb51.net/yunying/">网站运营</a>
+				<a href="http://www.jb51.net/hack/">网络安全</a>
+				<a href="http://www.jb51.net/shouce/">在线手册</a>
+			</span></p></li>
+		</ul>
+	</div>
+	<!--导航结束-->
+</div>
+
+<div class="main mb10 clearfix">
+<div class="clearfix"><div class="mainlr"><a href="http://click.aliyun.com/m/29949/" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ali1000.png" alt="cdnoss" width="1080" height="60"></a></div><div class="blank5"></div><div class="mainlr"><a href="https://cloud.tencent.com/product/lh?fromSource=gwzcw.788746.788746.788746" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/tengxunyun0302.gif" alt="txyun" width="1080" height="60"></a></div><div class="blank5"></div><div id="txtlink"><ul><li><a href="http://www.2016idc.com/cdn.html" target="_blank"><span style="color:red;">◆◆◆◆◆高防免备案CDN◆◆◆◆◆</span></a></li><li><a href="http://click.aliyun.com/m/15321/" target="_blank"><span style="color:red;">30余款阿里云产品免费6个月&gt;&gt;</span></a></li><li><a href="http://www.zoneidc.com/" target="_blank"><span style="color:red;">1G香港云49元/美国云49元/韩国云89元</span></a></li><li><a href="http://www.kaivps.com/cloud.html" target="_blank"><span style="color:red;">★美国/香港/国内/高防服务器VPS★好优云</span></a></li><li><a href="http://www.laoyuming.com/" target="_blank"><span style="color:blue;">【3000个备案老域名】100元起 每天更新</span></a></li><li><a href="http://www.enkj.com/idc/" target="_blank"><span style="color:blue;">【亿恩】DELL品牌服务器，月付799元起</span></a></li><li><a href="http://www.tuidc.com/" target="_blank"><span style="color:blue;">服务器租用/托管-域名空间/认准腾佑科技</span></a></li><li><a href="http://kubozy.com/" target="_blank"><span style="color:blue;">酷播资源网-万部VIP电影免费采集保证不卡</span></a></li><li><a href="http://www.guowaidiaocha.com/" target="_blank"><span style="color:red;">★国外调查 月赚两万，一对一教学带你★</span></a></li><li><a href="http://vps.zzidc.com/tongji/jb51w.html" target="_blank"><span style="color:red;">★☆云服务器5折，天天抽红包抵扣☆★</span></a></li><li><a href="http://www.hkcn2.com/51.htm" target="_blank"><span style="color:red;">**香港高防10m大带宽独服，低至999元**</span></a></li><li><a href="https://www.zllyun.com/cloud.shtml" target="_blank"><span style="color:red;">知了云,OpenStack云服务器◆5折优惠◆</span></a></li><li><a href="https://www.50vm.com/" target="_blank"><span style="color:blue;">4核独服199/16核独服360|创梦网络</span></a></li><li><a href="https://cloud.tencent.com/act/campus?fromSource=gwzcw.846004.846004.846004" target="_blank"><span style="color:blue;">腾讯云拼团福利 1核2G云服务器10元/月</span></a></li><li><a href="http://www.zitian.cn/Products/zhongyuan/overview.aspx" target="_blank"><span style="color:blue;">中原地区核心数据中心，首月托管免费</span></a></li><li><a href="http://www.7yc.com/rent.html" target="_blank"><span style="color:blue;">██云彩网络██100G防服务器450元</span></a></li><li><a href="http://www.dsx.top/" target="_blank"><span style="color:red;">产品发布、创业开店、需求任务找大师兄</span></a></li><li><a href="http://www.gwidc.com/html/server_zy_xz.asp" target="_blank"><span style="color:red;">港湾网络-徐州百独16核32G 999/月~</span></a></li><li><a href="http://www.ssf.cc/" target="_blank"><span style="color:red;">免备vps20/百独799/双线350/45互联</span></a></li><li><a href="http://www.xiaozhiyun.com/2016/" target="_blank"><span style="color:red;">韩国香港美国站群服务器 巨牛网络</span></a></li><li><a href="http://www.139w.com/" target="_blank"><span style="color:blue;">鼎点网络百兆独享服务器仅需999元</span></a></li><li><a href="http://www.360jq.com/hkshuang.htm" target="_blank"><span style="color:blue;">[香港双高防]无视CC★DDOS/堪比广东！</span></a></li><li><a href="http://www.cyidc.cc/" target="_blank"><span style="color:blue">畅游网络 百独服务器 包跑满 998元</span></a></li><li><a href="http://www.wdw6.com/" target="_blank"><span style="color:blue;">服务器租用  199元起</span></a></li><li><a href="http://www.wsisp.net/sale/20170518/?indexjb" target="_blank"><span style="color:red;">█▇▆5M独享云主机599/年▆▇█</span></a></li><li><a href="http://www.qy.com.cn/" target="_blank"><span style="color:red;">群英云服务器送10M带宽30G防御,49元起</span></a></li><li><a href="https://www.haoxitong.com/" target="_blank"><span style="color:red;">好系统,装机首选好系统</span></a></li><li><a href="http://www.jjidc.com/" target="_blank"><span style="color:red;">九九数据 — 工信部认可正规资质IDC接入商</span></a></li><li><a href="https://www.95idc.com/" target="_blank"><span style="color:blue;">95IDC█香港沙田CN2服务器 599/月</span></a></li><li><a href="http://www.33ip.com/" target="_blank"><span style="color:blue;">枫信科技-江苏双线10M保证-399/元</span></a></li><li><a href="http://www.xmwzidc.cn/" target="_blank"><span style="color:blue;">◆◆◆海西数据全球服务器租用◆◆◆</span></a></li><li><a href="http://www.pdidc.com/" target="_blank"><span style="color:blue;">浦东数据中心上海电信4星云主机30元/月起</span></a></li></ul><div class="clearfix"></div></div><div class="blank5"></div><div class="mainlr"><a href="https://www.xrcloud.net/ruicloud/#/vps" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/xinruiyun0301.gif" alt="xinruiyun" width="1080" height="60"></a></div><div class="blank6"></div><div class="topimg"><ul><li><a href="https://www.west.cn/services/cloudhost/?link=jb51" target="_blank"><img alt="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/west263_index.gif" width="237" height="60"></a></li><li><a href="http://click.aliyun.com/m/17168/" target="_blank"><img alt="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ali2371.jpg" width="237" height="60"></a></li><li><a href="https://www.simcentric.com/sc/promos/2018-cny" target="_blank"><img alt="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/YuanXiao237_v1.gif" width="237" height="60"></a></li><li><a href="http://www.8dwww.com/product/list/11754.html" target="_blank"><img alt="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/8dwww.gif" width="237" height="60"></a></li></ul></div><div class="blank6"></div>
+</div>
+</div>
+
+<div class="main clearfix">
+	<div class="NavBar clearfix ptb10">
+		<div class="fl w690">
+			<div class="box mb15 mt10"><i class="icon"></i>您的位置：<a href="http://www.jb51.net/">主页</a> &gt; <a href="http://www.jb51.net/web/">网页制作</a> &gt; <a href="http://www.jb51.net/css/">CSS</a> &gt; <a href="http://www.jb51.net/css/list538_1.html">浏览器兼容教程</a> &gt; </div>
+		</div>
+		<div class="fr w300"><div class="search">
+		<form action="http://so.jb51.net/cse/search" target="_blank">
+			<input type="hidden" name="s" value="10520733385329581432">
+			<input type="hidden" name="ie" value="gbk">
+			<input type="text" name="q" class="key_input" placeholder="请输入关键词">
+			<input type="submit" value=" " class="c_btn">
+		</form></div>
+		</div>
+	</div>
+</div>
+
+<!--content Star -->
+<div id="contents">
+ <!--share start-->
+ <div id="right-share" style="display: none;">
+	<div class="right-share jb-share" id="jb-share">
+		<a class="rshare-weixin" title="">微信</a>
+        <a rel="nofollow" class="rshare-qzone" target="_blank" href="http://tougao.jb51.net/" title="投稿">投稿</a>
+		<a rel="nofollow" class="rshare-sqq" target="_blank" href="http://shequ.jb51.net/" title="交流社区">交流社区</a>
+		<a rel="nofollow" class="rshare-tsina" target="_blank" href="http://youhui.jb51.net/" title="领取优惠券">领取优惠券</a>
+	</div>
+	<a class="rshare-top" onclick="javascript:;"></a>
+			
+	<div id="weixin-code" class="hide">
+	<div class="popup_weixin_head"><p>关注微信公众号</p> 
+	<div id="code"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/erwm.jpg" alt="扫一扫" width="100" hight="100"></div>
+	</div>
+	</div>	
+ </div>
+<!--share end-->
+
+ <div class="main clearfix bgf">
+      <div class="w750 fl">
+      <div class="article-content border">
+      <div class="title">
+            <h1 class="YaHei">史上最全的CSS hack方式一览(兼容多浏览器)</h1>
+            <p><i>互联网</i> &nbsp; 09-11 19:13:46 &nbsp; 作者：佚名 &nbsp; <a href="http://www.jb51.net/css/493362.html#comments"> <img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/text-message.png" width="15" height="15"> 我要评论</a></p>
+        </div>
+        <div class="art_desc mt10">为了获得统一的页面效果，就需要针对不同的浏览器或不同版本写特定的CSS样式，我们把这个针对不同的浏览器/不同版本写相应的CSS code的过程，叫做CSS hack!</div>
+        <div id="con_all">
+			<div id="con_da1"><script async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/adsbygoogle.js.下载"></script><ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-6384567588307613" data-ad-slot="6438537127" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/saved_resource.html"></iframe></ins></ins></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+			<div id="con_da2"><div style="width: 100%;"><span style="display:none;cursor:auto;"></span><iframe width="300" frameborder="0" height="250" scrolling="no" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/s.html"></iframe></div><script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/bwyffvsfzdec.js.下载"></script>
+</div>
+		</div>
+        <div id="content">
+做前端多年，虽然不是经常需要hack，但是我们经常会遇到各浏览器表现不一致的情况。基于此，某些情况我们会极不情愿的使用这个不太友好的方式来达到大家要求的页面表现。我个人是不太推荐使用hack的，要知道一名好的前端，要尽可能不使用hack的情况下实现需求，做到较好的用户体验。可是啊，现实太残酷，浏览器厂商之间历史遗留的问题让我们在目标需求下不得不向hack妥协，虽然这只是个别情况。今天，结合自己的经验和理解，做了几个demo把IE6~IE10和其他标准浏览器的CSS hack做一个总结，也许本文应该是目前最全面的hack总结了吧。 <br><br><strong>什么是CSS hack</strong> <br>由于不同厂商的流览器或某浏览器的不同版本（如IE6-IE11,Firefox/Safari/Opera/Chrome等），对CSS的支持、解析不一样，导致在不同浏览器的环境中呈现出不一致的页面展现效果。这时，我们为了获得统一的页面效果，就需要针对不同的浏览器或不同版本写特定的CSS样式，我们把这个针对不同的浏览器/不同版本写相应的CSS code的过程，叫做CSS hack! <br><br><strong>CSS hack的原理</strong> <br>由于不同的浏览器和浏览器各版本对CSS的支持及解析结果不一样，以及CSS优先级对浏览器展现效果的影响，我们可以据此针对不同的浏览器情景来应用不同的CSS。 <br><br><strong>CSS hack分类</strong> <br>CSS Hack大致有3种表现形式，CSS属性前缀法、选择器前缀法以及IE条件注释法（即HTML头部引用if IE）Hack，实际项目中CSS Hack大部分是针对IE浏览器不同版本之间的表现差异而引入的。 <br><br>属性前缀法(即类内部Hack)：例如 IE6能识别下划线"_"和星号" * "，IE7能识别星号" * "，但不能识别下划线"_"，IE6~IE10都认识"\9"，但firefox前述三个都不能认识。 <br>选择器前缀法(即选择器Hack)：例如 IE6能识别*html .class{}，IE7能识别*+html .class{}或者*:first-child+html .class{}。 <br>IE条件注释法(即HTML条件注释Hack)：针对所有IE(注：IE10+已经不再支持条件注释)： &lt;!--[if IE]&gt;IE浏览器显示的内容 &lt;![endif]--&gt;，针对IE6及以下版本： &lt;!--[if lt IE 6]&gt;只在IE6-显示的内容 &lt;![endif]--&gt;。这类Hack不仅对CSS生效，对写在判断语句里面的所有代码都会生效。 <br>　　 <br>CSS hack书写顺序，一般是将适用范围广、被识别能力强的CSS定义在前面。 <br><br><strong>CSS hack方式一：条件注释法</strong> <br>　 <br>这种方式是IE浏览器专有的Hack方式，微软官方推荐使用的hack方式。举例如下 <br><br>只在IE下生效 <br>&lt;!--[if IE]&gt; <br>这段文字只在IE浏览器显示 <br>&lt;![endif]--&gt; <br><br>只在IE6下生效 <br>&lt;!--[if IE 6]&gt; <br>这段文字只在IE6浏览器显示 <br>&lt;![endif]--&gt; <br><br>只在IE6以上版本生效 <br>&lt;!--[if gte IE 6]&gt; <br>这段文字只在IE6以上(包括)版本IE浏览器显示 <br>&lt;![endif]--&gt; <br><br>只在IE8上不生效 <br>&lt;!--[if ! IE 8]&gt; <br>这段文字在非IE8浏览器显示 <br>&lt;![endif]--&gt; <br><br>非IE浏览器生效 <br>&lt;!--[if !IE]&gt; <br>这段文字只在非IE浏览器显示 <br>&lt;![endif]--&gt; <br><br><strong>CSS hack方式二：类内属性前缀法</strong> <br>属性前缀法是在CSS样式属性名前加上一些只有特定浏览器才能识别的hack前缀，以达到预期的页面展现效果。 <br><br>IE浏览器各版本 CSS hack 对照表<br>
+<table class="jborder">
+    <tbody>
+        <tr>
+            <td>hack</td>
+            <td>写法</td>
+            <td>实例</td>
+            <td>IE6(S)</td>
+            <td>IE6(Q)</td>
+            <td>IE7(S)</td>
+            <td>IE7(Q)</td>
+            <td>IE8(S)</td>
+            <td>IE8(Q)</td>
+            <td>IE9(S)</td>
+            <td>IE9(Q)</td>
+            <td>IE10(S)</td>
+            <td>IE10(Q)</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*color</td>
+            <td>青色</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>+color</td>
+            <td>绿色</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>-color</td>
+            <td>黄色</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td>N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+        </tr>
+        <tr>
+            <td>_</td>
+            <td>_color</td>
+            <td>蓝色</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+        </tr>
+        <tr>
+            <td>#</td>
+            <td>#color</td>
+            <td>紫色</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+        </tr>
+        <tr>
+            <td>\0</td>
+            <td>color:red\0</td>
+            <td>红色</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+        </tr>
+        <tr>
+            <td>\9\0</td>
+            <td>color:red\9\0</td>
+            <td>粉色</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+        </tr>
+        <tr>
+            <td>!important</td>
+            <td>color:blue !important;color:green;</td>
+            <td style="COLOR: rgb(102,51,0) !important">棕色</td>
+            <td class="unrender">N</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="unrender">N</td>
+            <td class="render">Y</td>
+            <td class="render">Y</td>
+        </tr>
+    </tbody>
+</table>
+<br>说明：在标准模式中 <br><br>“-″减号是IE6专有的hack <br>“\9″ IE6/IE7/IE8/IE9/IE10都生效 <br>“\0″ IE8/IE9/IE10都生效，是IE8/9/10的hack <br>“\9\0″ 只对IE9/IE10生效，是IE9/10的hack <br>demo如下<br>
+<div class="codeText">
+<div class="codeHead"><span class="lantxt">CSS Code</span><span onclick="copyIdText(&#39;code_9844&#39;)" class="copyCodeText" style="CURSOR: pointer">复制内容到剪贴板</span></div>
+<div id="code_9844">
+<ol class="dp-css">
+    <li class="alt"><span><span>&lt;script&nbsp;type=</span><span class="string">"text/javascript"</span><span>&gt; &nbsp;&nbsp;</span></span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;//alert(document.compatMode); &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&lt;/script&gt; &nbsp;&nbsp;</span></li>
+    <li><span>&lt;style&nbsp;type=</span><span class="string">"text/css"</span><span>&gt; &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>body:nth-of-type(1)&nbsp;.iehack{ &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">color</span><span>:&nbsp;</span><span class="colors">#F00</span><span>;</span><span class="comment">/*&nbsp;对Windows&nbsp;IE9/Firefox&nbsp;7+/Opera&nbsp;10+/所有Chrome/Safari的CSS&nbsp;hack&nbsp;，选择器也适用几乎全部Mobile/Linux/Mac&nbsp;browser*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>} &nbsp;&nbsp;</span></li>
+    <li><span>.demo1,.demo2,.demo3,.demo4{ &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">width</span><span>:</span><span class="string">100px</span><span>; &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">height</span><span>:</span><span class="string">100px</span><span>; &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>} &nbsp;&nbsp;</span></li>
+    <li><span>.hack{ &nbsp;&nbsp;</span></li>
+    <li class="alt"><span></span><span class="comment">/*demo1&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span></span><span class="comment">/*demo1&nbsp;注意顺序，否则IE6/7下可能无法正确显示，导致结果显示为白色背景*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">red</span><span>;&nbsp;</span><span class="comment">/*&nbsp;All&nbsp;browsers&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">blue</span><span>&nbsp;!</span><span class="keyword">important</span><span>;</span><span class="comment">/*&nbsp;All&nbsp;browsers&nbsp;but&nbsp;IE6&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;*</span><span class="keyword">background-color</span><span>:</span><span class="string">black</span><span>;&nbsp;</span><span class="comment">/*&nbsp;IE6,&nbsp;IE7&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;+</span><span class="keyword">background-color</span><span>:</span><span class="string">yellow</span><span>;</span><span class="comment">/*&nbsp;IE6,&nbsp;IE7*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">gray</span><span>\9;&nbsp;</span><span class="comment">/*&nbsp;IE6,&nbsp;IE7,&nbsp;IE8,&nbsp;IE9,&nbsp;IE10&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">purple</span><span>\0;&nbsp;</span><span class="comment">/*&nbsp;IE8,&nbsp;IE9,&nbsp;IE10&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:orange\9\0;</span><span class="comment">/*IE9,&nbsp;IE10*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;_background-</span><span class="keyword">color</span><span>:</span><span class="string">green</span><span>;&nbsp;</span><span class="comment">/*&nbsp;Only&nbsp;works&nbsp;in&nbsp;IE6&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;*+</span><span class="keyword">background-color</span><span>:pink;&nbsp;</span><span class="comment">/*&nbsp;&nbsp;WARNING:&nbsp;Only&nbsp;works&nbsp;in&nbsp;IE7&nbsp;?&nbsp;Is&nbsp;it&nbsp;right?&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>} &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;</span></li>
+    <li><span></span><span class="comment">/*可以通过javascript检测IE10，然后给IE10的&lt;html&gt;标签加上class=”ie10″&nbsp;这个类&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>.ie10&nbsp;</span><span class="colors">#hack</span><span>{ &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">color</span><span>:</span><span class="string">red</span><span>;&nbsp;</span><span class="comment">/*&nbsp;Only&nbsp;works&nbsp;in&nbsp;IE10&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>} &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span></span><span class="comment">/*demo2*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>.iehack{ &nbsp;&nbsp;</span></li>
+    <li class="alt"><span></span><span class="comment">/*该demo实例是用于区分标准模式下ie6~ie9和Firefox/Chrome的hack，注意顺序 </span>&nbsp;</li>
+    <li><span><span class="comment">IE6显示为：绿色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">IE7显示为：黑色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">IE8显示为：红色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">IE9显示为：蓝色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">Firefox/Chrome显示为：橘色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">（本例IE10效果同IE9,Opera最新版效果同IE8） </span>&nbsp;</span></li>
+    <li><span><span class="comment">*/</span><span>&nbsp;&nbsp;</span></span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:orange;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;all&nbsp;-&nbsp;for&nbsp;Firefox/Chrome&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">red</span><span>\0;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;ie&nbsp;8/9/10/Opera&nbsp;-&nbsp;for&nbsp;ie8/ie10/Opera&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">blue</span><span>\9\0;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;ie&nbsp;9/10&nbsp;-&nbsp;for&nbsp;ie9/10&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;*</span><span class="keyword">background-color</span><span>:</span><span class="string">black</span><span>;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;ie&nbsp;6/7&nbsp;-&nbsp;for&nbsp;ie7&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;_background-</span><span class="keyword">color</span><span>:</span><span class="string">green</span><span>;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;ie&nbsp;6&nbsp;-&nbsp;for&nbsp;ie6&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>} &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;</span></li>
+    <li><span></span><span class="comment">/*demo3 </span>&nbsp;</li>
+    <li class="alt"><span><span class="comment">实例是用于区分标准模式下ie6~ie9和Firefox/Chrome的hack，注意顺序 </span>&nbsp;</span></li>
+    <li><span><span class="comment">IE6显示为：红色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">IE7显示为：蓝色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">IE8显示为：绿色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">IE9显示为：粉色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">Firefox/Chrome显示为：橘色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">（本例IE10效果同IE9，Opera最新版效果也同IE9为粉色） </span>&nbsp;</span></li>
+    <li><span><span class="comment"></span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">*/</span><span>&nbsp;&nbsp;</span></span></li>
+    <li><span>.element&nbsp;{ &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:orange;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;all&nbsp;IE/FF/CH/OP*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>} &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>.element&nbsp;{ &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;*</span><span class="keyword">background-color</span><span>:&nbsp;</span><span class="string">blue</span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;IE6+7,&nbsp;doesn't&nbsp;work&nbsp;in&nbsp;IE8/9&nbsp;as&nbsp;IE7&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>} &nbsp;&nbsp;</span></li>
+    <li><span>.element&nbsp;{ &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;_background-</span><span class="keyword">color</span><span>:&nbsp;</span><span class="string">red</span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;IE6&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>} &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>.element&nbsp;{ &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:&nbsp;</span><span class="string">green</span><span>\0;&nbsp;</span><span class="comment">/*&nbsp;IE8+9+10&nbsp;&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>} &nbsp;&nbsp;</span></li>
+    <li><span>:root&nbsp;.element&nbsp;{&nbsp;</span><span class="keyword">background-color</span><span>:pink\0;&nbsp;}&nbsp;&nbsp;</span><span class="comment">/*&nbsp;IE9+10&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;</span></li>
+    <li><span></span><span class="comment">/*demo4*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span></span><span class="comment">/* </span>&nbsp;</li>
+    <li><span><span class="comment"></span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">该实例是用于区分标准模式下ie6~ie10和Opera/Firefox/Chrome的hack，本例特别要注意顺序 </span>&nbsp;</span></li>
+    <li><span><span class="comment">IE6显示为：橘色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">IE7显示为：粉色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">IE8显示为：黄色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">IE9显示为：紫色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">IE10显示为：绿色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">Firefox显示为：蓝色， </span>&nbsp;</span></li>
+    <li><span><span class="comment">Opera显示为：黑色， </span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">Safari/Chrome显示为：灰色， </span>&nbsp;</span></li>
+    <li><span><span class="comment"></span>&nbsp;</span></li>
+    <li class="alt"><span><span class="comment">*/</span><span>&nbsp;&nbsp;</span></span></li>
+    <li><span>.hacktest{&nbsp; &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">blue</span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*&nbsp;都识别，此处针对firefox&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">red</span><span>\9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*all&nbsp;ie*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">yellow</span><span>\0;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*for&nbsp;IE8/IE9/10&nbsp;最新版opera也认识*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;+</span><span class="keyword">background-color</span><span>:pink;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*for&nbsp;ie6/7*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;_background-</span><span class="keyword">color</span><span>:orange;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">/*for&nbsp;ie6*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>} &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;</span></li>
+    <li><span>@media&nbsp;</span><span class="string">screen</span><span>&nbsp;and&nbsp;(</span><span class="keyword">min-width</span><span>:0){&nbsp; &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;.hacktest&nbsp;{</span><span class="keyword">background-color</span><span>:</span><span class="string">black</span><span>\0;}&nbsp;&nbsp;</span><span class="comment">/*opera*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>}&nbsp; &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>@media&nbsp;</span><span class="string">screen</span><span>&nbsp;and&nbsp;(</span><span class="keyword">min-width</span><span>:0)&nbsp;{&nbsp; &nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;&nbsp;&nbsp;.hacktest&nbsp;{&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">purple</span><span>\9;&nbsp;}</span><span class="comment">/*&nbsp;&nbsp;for&nbsp;IE9/IE10&nbsp;&nbsp;PS:国外有些习惯常写作\0，根本没考虑Opera也认识\0的实际&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span>} &nbsp;&nbsp;</span></li>
+    <li><span>@media&nbsp;</span><span class="string">screen</span><span>&nbsp;and&nbsp;(-ms-</span><span class="string">high</span><span>-contrast:&nbsp;active),&nbsp;(-ms-</span><span class="string">high</span><span>-contrast:&nbsp;</span><span class="string">none</span><span>)&nbsp;{&nbsp; &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>&nbsp;&nbsp;&nbsp;.hacktest&nbsp;{&nbsp;</span><span class="keyword">background-color</span><span>:</span><span class="string">green</span><span>;&nbsp;}&nbsp;</span><span class="comment">/*&nbsp;for&nbsp;IE10+&nbsp;此写法可以适配到高对比度和默认模式，故可覆盖所有ie10的模式&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>} &nbsp;&nbsp;</span></li>
+    <li class="alt"><span>@media&nbsp;</span><span class="string">screen</span><span>&nbsp;and&nbsp;(-webkit-min-device-pixel-ratio:0){&nbsp;.hacktest&nbsp;{</span><span class="keyword">background-color</span><span>:</span><span class="string">gray</span><span>;}&nbsp;}&nbsp;&nbsp;</span><span class="comment">/*for&nbsp;Chrome/Safari*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span>&nbsp;&nbsp;</span></li>
+    <li class="alt"><span></span><span class="comment">/*&nbsp;#963棕色&nbsp;:root&nbsp;is&nbsp;for&nbsp;IE9/IE10,&nbsp;优先级高于@media,&nbsp;慎用！如果二者合用，必要时在@media样式加入&nbsp;!important&nbsp;才能区分IE9和IE10&nbsp;*/</span><span>&nbsp;&nbsp;</span></li>
+    <li><span></span><span class="comment">/* </span>&nbsp;</li>
+    <li class="alt"><span><span class="comment">:root&nbsp;.hacktest&nbsp;{&nbsp;background-color:#963\9;&nbsp;}&nbsp; </span>&nbsp;</span></li>
+    <li><span><span class="comment">*/</span><span>&nbsp;&nbsp;</span></span></li>
+    <li class="alt"><span>&lt;/style&gt;&nbsp;&nbsp;</span></li>
+</ol>
+</div>
+</div>
+<p><strong>demo1是测试不同IE浏览器下hack 的显示效果</strong> <br>IE6显示为：粉色， <br>IE7显示为：粉色， <br>IE8显示为：蓝色， <br>IE9显示为：蓝色， <br><strong>Firefox/Chrome/Opera显示为：蓝色， <br></strong>若去掉其中的!important属性定义，则IE6/7仍然是粉色，IE8是紫色，IE9/10为橙色，Firefox/Chrome变为红色，Opera是紫色。是不是有些奇怪：除了IE6以外，其他所有的表现都符合我们的期待。那为何IE6表现的颜色不是_background-color:green;的绿色而是*+background-color:pink的粉色呢？其实是最后一句所谓的IE7私有hack惹的祸？不是说*+是IE7的专有hack吗？？？错，你可能太粗心了！我们常说的IE7专有*+hack的格式是*+html selector，而不是上面的直接在属性上加*+前缀。如果是为IE7定制特殊样式，应该这样使用： <br><br>*+html #ie7test { /* IE7 only*/ <br>color:green; <br>} <br>经过测试，我发现属性前缀*+background-color:pink;只有IE6和IE7认识。而*+html selector只有IE7认识。所以我们在使用时候一定要特别注意。 <br><br>demo2实例是用于区分标准模式下ie6~ie9和Firefox/Chrome的hack，注意顺序 <br>IE6显示为：绿色， <br>IE7显示为：黑色， <br>IE8显示为：红色， <br>IE9显示为：蓝色， <br>Firefox/Chrome显示为：橘色， <br>（本例IE10效果同IE9,Opera最新版效果同IE8） <br><br>demo3实例也是用于区分标准模式下ie6~ie9和Firefox/Chrome的hack，注意顺序 <br>IE6显示为：红色， <br>IE7显示为：蓝色， <br>IE8显示为：绿色， <br>IE9显示为：粉色， <br>Firefox/Chrome显示为：橘色， <br>（本例IE10效果同IE9，Opera最新版效果也同IE9为粉色） <br><br>demo4实例是用于区分标准模式下ie6~ie10和Opera/Firefox/Chrome的hack，本例特别要注意顺序 <br>IE6显示为：橘色， <br>IE7显示为：粉色， <br>IE8显示为：黄色， <br>IE9显示为：紫色， <br>IE10显示为：绿色， <br>Firefox显示为：蓝色， <br>Opera显示为：黑色， <br>Safari/Chrome显示为：灰色，<br><br><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/20160911191703.jpg" alt=""><br><br><strong>CSS hack方式三：选择器前缀法 <br></strong>选择器前缀法是针对一些页面表现不一致或者需要特殊对待的浏览器，在CSS选择器前加上一些只有某些特定浏览器才能识别的前缀进行hack。 <br><br>目前最常见的是 <br><br>*html *前缀只对IE6生效 <br>*+html *+前缀只对IE7生效 <br>@media screen\9{...}只对IE6/7生效 <br>@media \0screen {body { background: red; }}只对IE8有效 <br>@media \0screen\,screen\9{body { background: blue; }}只对IE6/7/8有效 <br>@media screen\0 {body { background: green; }} 只对IE8/9/10有效 <br>@media screen and (min-width:0\0) {body { background: gray; }} 只对IE9/10有效 <br>@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {body { background: orange; }} 只对IE10有效 <br>等等 <br>结合CSS3的一些选择器，如html:first-child，body:nth-of-type(1)，衍生出更多的hack方式，具体的可以参考下<br><br><a href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/20160911191704.jpg" target="_blank" class="bPic"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/20160911191704.jpg" width="1143" height="1104" alt="" style="width: 650px; height: auto;"></a><br><strong>CSS3选择器结合JavaScript的Hack</strong><br>我们用IE10进行举例：</p>
+<p>由于IE10用户代理字符串（UserAgent）为：Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)，所以我们可以使用javascript将此属性添加到文档标签中，再运用CSS3基本选择器匹配。</p>
+<p>JavaScript代码:</p>
+<p><br></p><div class="msgheader"><div class="right"><span style="CURSOR: pointer" onclick="copycode(getid(&#39;phpcode2&#39;));"><u>复制代码</u></span></div>代码如下:</div><div class="msgborder" id="phpcode2"><br> var htmlObj = document.documentElement;<br> htmlObj.setAttribute('data-useragent',navigator.userAgent);<br> htmlObj.setAttribute('data-platform', navigator.platform );<br></div><p></p>
+<p>CSS3匹配代码：</p>
+<p><br></p><div class="msgheader"><div class="right"><span style="CURSOR: pointer" onclick="copycode(getid(&#39;phpcode3&#39;));"><u>复制代码</u></span></div>代码如下:</div><div class="msgborder" id="phpcode3"><br>html[data-useragent*='MSIE 10.0'] #id {<br> color: #F00;<br>}<br></div><p></p>
+<p>CSS hack利弊<br>一般情况下，我们尽量避免使用CSS hack，但是有些情况为了顾及用户体验实现向下兼容，不得已才使用hack。比如由于IE8及以下版本不支持CSS3,而我们的项目页面使用了大量CSS3新属性在IE9/Firefox/Chrome下正常渲染，这种情况下如果不使用css3pie或htc或条件注释等方法时,可能就得让IE8-的专属hack出马了。使用hack虽然对页面表现的一致性有好处，但过多的滥用会造成html文档混乱不堪，增加管理和维护的负担。相信只要大家一起努力，少用、慎用hack，未来一定会促使浏览器厂商的标准越来越趋于统一，顺利过渡到标准浏览器的主流时代。抛弃那些陈旧的IE hack，必将减轻我们编码的复杂度，少做无用功。</p>
+<p>最后补上一张引自国外某大牛总结的CSS hack表，这时一张6年前的旧知识汇总表了，放在这里仅供需要时候方便参考。<br><br><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/20160911191705.gif" alt=""><br><br>说明：本文测试环境为IE6~IE10，Chrome 29.0.1547.66 m，Firefox 20.0.1 ，Opera 12.02等。一边工作，一边总结，总结了几天写下整理好，今天把它分享出来，文中难免有纰漏，如大侠发现请及时告知！ <br><br>转载请注明来自CSDN freshlover的博客专栏《史上最全CSS Hack方式一览》</p>
+
+<div class="jb51ewm"><div class="fl"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/jb51ewm.png"></div><div class="fr"><p>微信公众号搜索 “ <span>脚本之家</span> ” ，选择关注</p><p>程序猿的那些事、送书等活动等着你</p></div></div></div><!--endmain-->
+<div class="tags mb10 clearfix">
+	<i class="icon-tag"></i>
+	<ul class="meta-tags items">
+	  <li class="tag item">Tag：<a href="http://www.jb51.net/do/tag/css/" target="_blank">css</a> &nbsp; <a href="http://www.jb51.net/do/tag/Hacker/" target="_blank">Hacker</a> &nbsp; </li>
+	</ul>
+</div>
+<div class="lbd clearfix">
+<div style=""><div id="hlsihdwz" style="margin-top:0px;"><div style="margin:0px;"><iframe width="700" frameborder="0" height="260" scrolling="no" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/s(1).html"></iframe></div></div></div><script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/lgypofdip.js.下载"></script>
+
+</div>
+<div id="shoucang"></div>
+<div class="xgcomm clearfix">
+<h2>相关文章</h2>
+<ul>
+<li class="lbd clearfix"><div id="_azczqk03z0r" style="width: 100%;"><iframe width="700" frameborder="0" height="120" scrolling="no" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/s(2).html"></iframe></div><script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/dyqhaquun.js.下载"></script>
+</li>
+<li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/550098.html" title="针对IE浏览器的兼容问题小结">针对IE浏览器的兼容问题小结</a></p><div class="item-info"><div class="js"> 
+这篇文章主要介绍了针对IE浏览器的兼容问题小结,需要的朋友可以参考下</div><span class="lbtn" style="float:right"> 2017-04-19 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/547244.html" title="避免不必要的浏览器兼容性问题的5个技巧">避免不必要的浏览器兼容性问题的5个技巧</a></p><div class="item-info"><div class="js"> 
+浏览器兼容性问题总是让人很头疼，这里介绍几个技巧来避免这个问题,需要的朋友可以参考下</div><span class="lbtn" style="float:right"> 2017-04-08 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/507784.html" title="IE6下兼容性常见的几个问题与解决方法">IE6下兼容性常见的几个问题与解决方法</a></p><div class="item-info"><div class="js"> 
+关于IE6兼容性问题有很多值得学习的地方，本文就给大家介绍一下在IE6下兼容性常见的几个问题，以及相对应的解决方法。希望通过本文的介绍大家对IE6兼容性的认识能更深一些</div><span class="lbtn" style="float:right"> 2016-11-05 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/507218.html" title="解决360双核浏览器兼容模式的页面显示问题">解决360双核浏览器兼容模式的页面显示问题</a></p><div class="item-info"><div class="js"> 
+当前360浏览器占据的浏览器市场20%以上的份额，我们做网站的肯定要考虑一下兼容性，有时候chrome与ie正常，但到了360浏览器就不行了，可能360双核的ie核心比较偏低版本的原</div><span class="lbtn" style="float:right"> 2016-11-03 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/493363.html" title="CSS hacker使用小结(兼容IE6、7、8)">CSS hacker使用小结(兼容IE6、7、8)</a></p><div class="item-info"><div class="js"> 
+今天，结合自己的经验和理解，做了几个demo把IE6~IE8和其他标准浏览器的CSS hack做一个总结</div><span class="lbtn" style="float:right"> 2016-09-11 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/493362.html" title="史上最全的CSS hack方式一览(兼容多浏览器)">史上最全的CSS hack方式一览(兼容多浏览器)</a></p><div class="item-info"><div class="js"> 
+为了获得统一的页面效果，就需要针对不同的浏览器或不同版本写特定的CSS样式，我们把这个针对不同的浏览器/不同版本写相应的CSS code的过程，叫做CSS hack!</div><span class="lbtn" style="float:right"> 2016-09-11 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/492862.html" title="ie6 z-index不起作用的完美解决方法">ie6 z-index不起作用的完美解决方法</a></p><div class="item-info"><div class="js"> 
+下面小编就为大家带来一篇ie6 z-index不起作用的完美解决方法。小编觉得挺不错的，现在就分享给大家，也给大家做个参考。一起跟随小编过来看看吧</div><span class="lbtn" style="float:right"> 2016-09-09 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/479924.html" title="浅谈浏览器的兼容性(必看篇)">浅谈浏览器的兼容性(必看篇)</a></p><div class="item-info"><div class="js"> 
+下面小编就为大家带来一篇浅谈浏览器的兼容性(必看篇)。小编觉得挺不错的，现在就分享给大家，也给大家做个参考。一起跟随小编过来看看吧</div><span class="lbtn" style="float:right"> 2016-07-25 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/478051.html" title="如何判断PC端浏览器内核">如何判断PC端浏览器内核</a></p><div class="item-info"><div class="js"> 
+如何判断PC端浏览器内核？下面小编就为大家带来一篇判断PC端浏览器内核的方法。小编觉得挺不错的，现在就分享给大家，也给大家做个参考。一起跟随小编过来看看吧</div><span class="lbtn" style="float:right"> 2016-07-18 </span></div></div></div></div></li><li><div class="item-inner"><div class="rbox"><div class="rbox-inner"><p><a class="link title" target="_blank" href="http://www.jb51.net/css/475633.html" title="详解IE浏览器的haslayout属性及相关兼容性问题解决">详解IE浏览器的haslayout属性及相关兼容性问题解决</a></p><div class="item-info"><div class="js"> 
+haslayout是IE浏览器专有的属性,然而这个属性却同样会给不同版本的IE带来浮动问题等一些列兼容性上面的麻烦...这里我们就来详解IE浏览器的haslayout属性及相关兼容性问题解</div><span class="lbtn" style="float:right"> 2016-07-08 </span></div></div></div></div></li>
+</ul>
+</div>
+<div class="lbd clearfix mt5">
+<div style="width: 100%;"><iframe width="700" frameborder="0" height="260" scrolling="no" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/s(3).html"></iframe></div><script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/fasjibjzg.js.下载"></script>
+
+</div>
+<a href="http://www.jb51.net/css/493362.html#comments"></a>
+<div id="comments">
+<h2>最新评论</h2>
+<div class="pd5"><div id="SOHUCS" sid="493362" style="width: 100%; height: auto;"><div id="SOHU_MAIN"><div id="SOHU-comment-main" class="sohu-comment-wrapper"><div id="article_info_sohu">        <div class="reset-g clear-g section-title-w  section-title-logoutStyle">
+            <div class="title-join-w">
+                <div class="join-wrap-w join-wrap-b"><strong class="wrap-name-w wrap-name-b">评论</strong><span class="wrap-join-w wrap-join-b">(<em class="join-strong-gw join-strong-bg">0</em><span node-type="involved">人参与</span><i class="gap-b">，</i><em class="join-strong-gw join-strong-bg">0</em><span node-type="comments">条评论</span>)</span></div>
+            </div>
+            <div class="title-user-w">
+                <div node-type="sohu-pact" class="title-link-w" style="display: none;"><a href="http://zt.pinglun.sohu.com/s2014/sljyhgy/index.shtml" target="_blank">搜狐“我来说两句”用户公约</a></div>
+            </div>
+        </div>
+        </div><div id="login_sohu"></div><div id="comment_sohu"><div node-type="cbox-wrapper" class="reset-g section-cbox-w"><div style="width:1px;height:1px;overflow:hidden;"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/vcode.jpg" style="visibility:hidden;width:1px;height:1px;"></div><div class="clear-g cbox-block-w">
+            <div class="block-head-w">
+                <div class="head-img-w">
+                                        <a node-type="user-avatar" href="javascript:void(0)" target="_self"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/pic42_null.gif" onerror="SOHUCS.isImgErr(this)" width="42" height="42" alt=""></a>
+                    </div>
+                <!--
+                -->
+            </div>
+        <div class="block-post-w block-post-default-e"><div class="post-wrap-w post-wrap-b"><div class="wrap-area-w"><div class="area-textarea-w" style="position:relative;zoom:1;z-index:9;"><textarea name="" class="textarea-fw textarea-bf">来说两句吧...</textarea></div></div><div class="clear-g wrap-action-w wrap-action-b"><div class="action-function-w action-function-b relative-z-w"><ul class="clear-g"><li class="function-face-w"><a href="javascript:void(0)" class="effect-w" title="表情"><i class="face-b"></i></a></li><!--<li class="function-at-w"><a href="javascript:void(0)" class="effect-w"><i class="at-b"></i></a></li>--></ul></div><div class="clear-g action-issue-w"><div class="issue-btn-w"><a href="javascript:void(0)"><button class="btn-fw btn-bf btn-fw-main">发布</button></a></div></div></div></div>
+                                    <div node-type="login-list" class="post-login-w">
+                <ul class="clear-g">
+                                                            <li style="display:block">
+                        <div class="login-wrap-w login-wrap-b">
+                            <a data-key="sina" target="_self" href="javascript:;" title="新浪微博" alt="新浪微博">
+                                <span class="wrap-icon-w icon30-sina-b"></span><span class="wrap-name-w wrap-name-b">微博登录</span>
+                            </a>
+                        </div>
+                    </li>
+                                        <li style="display:block">
+                        <div class="login-wrap-w login-wrap-b">
+                            <a data-key="qq" target="_self" href="javascript:;" title="QQ" alt="QQ">
+                                <span class="wrap-icon-w icon30-qq-b"></span><span class="wrap-name-w wrap-name-b">QQ登录</span>
+                            </a>
+                        </div>
+                    </li>
+                                        <li style="display:">
+                        <div class="login-wrap-w login-wrap-b">
+                            <a data-key="" target="_self" href="javascript:;" title="" alt="">
+                                <span class="wrap-icon-w icon30--b"></span><span class="wrap-name-w wrap-name-b"></span>
+                            </a>
+                        </div>
+                    </li>
+                                        <li>
+                        <div class="login-wrap-w login-wrap-b login-wrap-phone-b">
+                            <a data-key="phone" target="_self" href="javascript:void(0)">
+                                <span class="wrap-icon-w icon30-phone-b"></span><span class="wrap-name-w wrap-name-b">手机登录</span>
+                            </a>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
+            </div></div><div node-type="prompt-no-privilege" class="cbox-prompt-w" style="display: none;">
+            <span class="prompt-empty-w prompt-empty-b">等级不够，发表评论升至指定级别才能获得该特权。详情请参见<a node-type="privilege-intro" href="javascript:;">等级说明</a>。</span>
+        </div></div></div><div id="list_sort_sohu"></div><div id="list_sohu" topicid="1619260343">
+        <div class="reset-g section-list-w">
+            <div class="list-comment-empty-w">
+                <div class="empty-prompt-w"><span class="prompt-null-w prompt-null-b">还没有评论，快来抢沙发吧！</span></div>
+            </div>
+        </div></div><div id="list_hot"></div><div id="page_sohu"></div><div id="more_list_sohu"></div><div id="powerby_sohu">        <div class="reset-g section-service-w">
+            <div class="service-wrap-w service-wrap-b"><a node-type="powered-by" href="http://changyan.sohu.com/?from=changyan" target="_blank">Powered by 畅言</a></div>
+        </div></div></div></div></div></div>
+</div>
+      </div><!--endborder-->
+      </div><!--end fl-->
+      
+<div class="w350 fr">
+<div class="article-right">
+<div class="r300 clearfix"><script async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/adsbygoogle.js.下载"></script><ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-6384567588307613" data-ad-slot="2817964327" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/saved_resource(1).html"></iframe></ins></ins></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="tabTitleBar mt10 bgf borderTred clearfix">
+<div class="borderTnone YaHei">
+<h4 class="red">文章分类</h4>
+<ul class="catalog catalogA">
+
+<li><a href="http://www.jb51.net/css/list539_1.html" target="_blank">CSS教程</a></li>
+
+<li><a href="http://www.jb51.net/css/list591_1.html" target="_blank">css3</a></li>
+
+<li><a href="http://www.jb51.net/css/list535_1.html" target="_blank">Div+CSS教程</a></li>
+
+<li><a href="http://www.jb51.net/css/list536_1.html" target="_blank">Web标准教程</a></li>
+<li><a class="currents" href="http://www.jb51.net/css/list538_1.html">浏览器兼容教程</a> </li>
+<li><a href="http://www.jb51.net/css/list537_1.html" target="_blank">CSS布局实例</a></li>
+
+</ul>
+</div>
+</div>
+<div class="r300 clearfix mt10"><script async="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/adsbygoogle.js.下载"></script><!--thea+300*250--><ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 0px;" data-ad-client="ca-pub-6389290466807248" data-ad-slot="6788945816" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display: inline-table; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 300px; background-color: transparent;"><ins id="aswift_2_anchor" style="display: block; border: none; height: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; width: 300px; background-color: transparent; overflow: hidden; opacity: 0;"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:300px;height:250px;" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/saved_resource(2).html"></iframe></ins></ins></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script><div class="blank10"></div><a href="http://click.aliyun.com/m/21950/" target="_blank"><img alt="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ali_300_1.jpg" width="300" height="100"></a><div class="blank10"></div><a href="https://cloud.tencent.com/solution/la?fromSource=gwzcw.781140.781140.781140" target="_blank"><img alt="" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/wxxcx300.gif" width="300" height="100"></a><div class="blank10"></div><iframe src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/zbj.html" width="300" height="250" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0; vertical-align:bottom;margin:0;" allowtransparency="true"></iframe>
+</div>                        
+<div class="tabTitleBar mt10 bgf borderTblue">
+<div class="borderTnone pb10 YaHei">
+<h4 class="blue">大家感兴趣的内容</h4>
+<ul class="newsList newList-in">
+<li><em class="no1">1</em><a href="http://www.jb51.net/css/23232.html" target="_blank">CSS 多浏览器兼容性问题及解决方案</a></li><li><em class="no2">2</em><a href="http://www.jb51.net/css/24163.html" target="_blank">css firefox火狐浏览器下的兼容性问题</a></li><li><em class="no3">3</em><a href="http://www.jb51.net/css/163265.html" target="_blank">一个不错的html视频播放器兼容主流浏览器</a></li><li><em class="no4">4</em><a href="http://www.jb51.net/css/24944.html" target="_blank">IE8的css hack  \9 使用说明</a></li><li><em class="no5">5</em><a href="http://www.jb51.net/css/106039.html" target="_blank">让IE6/IE7/IE8支持CSS3属性的8种方法介绍</a></li><li><em class="no6">6</em><a href="http://www.jb51.net/css/76894.html" target="_blank">IE6兼容性问题及IE6常见bug详细汇总</a></li><li><em class="no7">7</em><a href="http://www.jb51.net/css/24946.html" target="_blank">IE6/IE7/IE8/Firefox/Chrome/Safari的CSS hack兼容一</a></li><li><em class="no8">8</em><a href="http://www.jb51.net/css/43686.html" target="_blank">div+css通用兼容性代码整理</a></li><li><em class="no9">9</em><a href="http://www.jb51.net/css/88637.html" target="_blank">完美解决IE兼容模式问题(使IE使用固定的渲染模式)</a></li><li><em class="no10">10</em><a href="http://www.jb51.net/css/119341.html" target="_blank">ie8 background背景图片没有显示</a></li>
+</ul>
+</div>
+</div>
+<div class="r300 clearfix mt10"><div class="idc3"><a href="http://www.021.net/" target="_blank"><h1>众生网络</h1><span>品牌服务器租用</span> </a><a href="http://www.geisnic.com/" target="_blank"><h1>集思网络</h1><span>VPS主机</span> </a><a href="http://www.33ip.com/" target="_blank"><h1>枫信科技</h1><span>IDC服务商</span> </a></div>
+</div>
+<div class="tabTitleBar mt10 bgf borderTblue">
+<div class="borderTnone pb10 YaHei">
+<h4 class="blue">最近更新的内容</h4>
+<ul class="newsListA">
+<li><a href="http://www.jb51.net/css/550098.html" target="_blank">针对IE浏览器的兼容问题小结</a></li><li><a href="http://www.jb51.net/css/547244.html" target="_blank">避免不必要的浏览器兼容性问题的5个技巧</a></li><li><a href="http://www.jb51.net/css/507784.html" target="_blank">IE6下兼容性常见的几个问题与解决方法</a></li><li><a href="http://www.jb51.net/css/507218.html" target="_blank">解决360双核浏览器兼容模式的页面显示问题</a></li><li><a href="http://www.jb51.net/css/493363.html" target="_blank">CSS hacker使用小结(兼容IE6、7、8)</a></li><li><a href="http://www.jb51.net/css/493362.html" target="_blank">史上最全的CSS hack方式一览(兼容多浏览器)</a></li><li><a href="http://www.jb51.net/css/492862.html" target="_blank">ie6 z-index不起作用的完美解决方法</a></li><li><a href="http://www.jb51.net/css/479924.html" target="_blank">浅谈浏览器的兼容性(必看篇)</a></li><li><a href="http://www.jb51.net/css/478051.html" target="_blank">如何判断PC端浏览器内核</a></li><li><a href="http://www.jb51.net/css/475633.html" target="_blank">详解IE浏览器的haslayout属性及相关兼容性问题解决</a></li>
+</ul>
+</div>
+</div>
+<div class="r300 clearfix mt10">
+<script type="text/javascript">var cpro_id="u2261513";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"300",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/c.js.下载" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u2261513_0"><iframe id="iframeu2261513_0" name="iframeu2261513_0" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ycim.html" width="300" height="300" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0;vertical-align:bottom;margin:0;width:300px;height:300px" allowtransparency="true"></iframe></div>
+
+</div>
+<div class="r300 clearfix mt10"><a href="http://tuidc.com/" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/tengyou300.gif" width="300" height="100"></a><div class="blank10"></div><a href="http://www.enkj.com/encloud/show/5" target="_blank"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/enkj300.gif" alt="云服务器" width="300" height="100"></a>
+</div>
+<div class="mt10 rFixedBox" style="position: static; top: 0px;">
+<script type="text/javascript">var cpro_id="u1397867";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"380",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/c.js.下载" type="text/javascript"></script><div id="BAIDU_SSP__wrapper_u1397867_0" style="width: 300px; height: 380px; display: inline-block;"><iframe id="iframeu1397867_0" name="iframeu1397867_0" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ycim(1).html" width="300" height="380" align="center,center" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" style="border:0;vertical-align:bottom;margin:0;width:300px;height:380px" allowtransparency="true"></iframe></div>
+
+</div>
+   </div>   
+      
+      </div><!--end fr-->
+      </div>
+</div><!--end content-->
+<div id="footer">
+<div class="main">
+<p>
+<a href="http://www.jb51.net/about.htm" target="_blank">关于我们</a> - 
+<a href="http://www.jb51.net/support.htm" target="_blank">广告合作</a> - 
+<a href="http://www.jb51.net/linkus.htm" target="_blank">联系我们</a> -  
+<a href="http://www.jb51.net/sm.htm" target="_blank">免责声明</a> -  
+<a href="http://www.jb51.net/sitemap.htm" target="_blank">网站地图</a> - 
+<a href="tencent://message/?uin=461478385&amp;Site=//www.jb51.net" target="_blank">投诉建议</a> - 
+<a href="http://www.jb51.net/up.htm" target="_blank">在线投稿</a>
+</p>
+<p><a rel="nofollow" class="ba" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32031102000137"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ghs.png"> 苏公网安备 32031102000137号</a>&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" class="ba" rel="nofollow" target="_blank">苏ICP备14036222号</a></p>
+<p>&#169;CopyRight 2006-2018 JB51.Net Inc All Rights Reserved. 脚本之家 版权所有</p>
+</div>
+</div><!--end footer-->
+<link type="text/css" rel="stylesheet" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/shCore.css">
+<link type="text/css" rel="Stylesheet" href="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/shThemeDefault.css">
+<script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/shCore.js.下载"></script>
+<script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/shAutoloader.js.下载"></script>
+<script type="text/javascript"> 
+/*更多导航*/
+$(".nav_top p").hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")});
+
+if (top.location != self.location)top.location=self.location;
+
+var varwindow=$(window);
+$('#content').find('img').each(function(){
+        var img = this;
+        if (img.width >= 650){
+            img.style.width = "650px";
+            img.style.height = "auto";
+            //$(img).removeAttr('height');
+            var aTag = document.createElement('a');
+            aTag.href = img.src;
+			aTag.target="_blank";
+            $(aTag).addClass('bPic')
+            .insertAfter(img).append(img)
+          }
+    });
+ varwindow.scroll(function()
+    {	
+    	//rFixedBox跟随滚动
+    	var h = varwindow.height();
+        var top = varwindow.scrollTop();
+    	var rFixedBox = $('.rFixedBox').prev().offset();
+        var fixedTop = rFixedBox.top;
+		
+        if(top>=fixedTop+344)
+        {
+			var h1 = parseInt($('#content').children('.main').height());
+			if(parseInt(top) + 340 < h1){
+				$('.rFixedBox').css({'position':'fixed','top': 0});
+			}else{
+				$('.rFixedBox').css({'position':'absolute','top': h1-510});
+			}
+        }
+        else
+        {
+            $('.rFixedBox').css({'position':'static', 'top':0});   
+        }	
+       /* return true;*/
+	   
+	   /*右侧快捷菜单*/
+	   sideFixed();
+    });
+	var ww = varwindow.width();
+	function sideFixed(){
+	var scrolltop = document.body.scrollTop || document.documentElement.scrollTop;
+	var a1 = 550;
+	if(ww>440){
+		if(a1<=scrolltop){
+			$('#right-share').slideDown();
+			}
+		else{
+			$('#right-share').slideUp();
+			}
+		}
+	}
+	$('.rshare-weixin').hover(function(){
+			$('#weixin-code').removeClass('hide');
+		},function(){
+			$('#weixin-code').addClass('hide');
+		});
+	/*二维码*/
+	$('#right-share .rshare-top').on('click',function(){
+        $('html,body').animate({'scrollTop':0},500);
+    });
+/*$(document).ready(function() {
+  $("#content img").unveil();
+});	*/
+SyntaxHighlighter.autoloader(
+	'applescript			//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushAppleScript.js',
+	'actionscript3 as3		//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushAS3.js',
+	'bash shell				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushBash.js',
+	'coldfusion cf			//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushColdFusion.js',
+	'cpp c					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushCpp.js',
+	'obj-c objc				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushObjC.js',
+	'c# c-sharp csharp		//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushCSharp.js',
+	'css					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushCss.js',
+	'delphi pascal			//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushDelphi.js',
+	'diff patch pas			//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushDiff.js',
+	'erl erlang				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushErlang.js',
+	'groovy					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushGroovy.js',
+	'haxe hx				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushHaxe.js',
+	'java					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushJava.js',
+	'jfx javafx				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushJavaFX.js',
+	'js jscript javascript	//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushJScript.js',
+	'perl pl				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushPerl.js',
+	'php					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushPhp.js',
+	'text plain				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushPlain.js',
+	'py python				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushPython.js',
+	'ruby rails ror rb		//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushRuby.js',
+	'scala					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushScala.js',
+	'sql					//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushSql.js',
+	'vb vbnet				//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushVb.js',
+	'ps powershell			//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushPowerShell.js',
+	'xml xhtml xslt html	//www.jb51.net/jslib/syntaxhighlighter/scripts/shBrushXml.js'
+);
+SyntaxHighlighter.all();	
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/arcts.js.下载"></script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<script>jbLoader();</script>
+<div id="tongji">
+<script type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/tongji2.js.下载"></script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/stat.php" language="JavaScript"></script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1585378" target="_blank" title="站长统计">站长统计</a><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/stat(1).php" language="JavaScript"></script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/core(1).php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5488963" target="_blank" title="站长统计">站长统计</a>
+<script type="text/javascript">
+//tu+
+var cpro_id = "u1893014";
+document.write('<scri'+'pt src="//cpro.baidustatic.com/cpro/ui/i.js" type="text/javascript"></s'+'cript>');
+</script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/i.js.下载" type="text/javascript"></script>
+<script charset="utf-8" type="text/javascript" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/changyan.js.下载"></script>
+<script type="text/javascript">
+(function(){
+var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?2f793ca9dd6f4c32488903eed5c7fbcb":"https://jspassport.ssl.qhimg.com/11.0.1.js?2f793ca9dd6f4c32488903eed5c7fbcb";
+document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+window.changyan.api.config({
+appid: 'cyrHH3dwi',
+conf: 'prod_1dc5dc80970106099d43fe242b7465fc'
+});
+</script><script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/11.0.1.js.下载" id="sozz"></script><script charset="utf-8" src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/ab77b6ea7f3fbf79.js.下载"></script>
+</div> 
+<script src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/count.php" language="javascript" type="text/javascript"></script>
+
+<iframe src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/cookie_iframe.html" style="display: none;"></iframe><div style="position: absolute; border: 0px; margin: 0px; padding: 0px; height: 0px; overflow: visible; text-align: left; top: 7788.8px; left: 225px; width: 604px; display: block;"><div id="f21ac82b21eeb7322631b6aa94e17f45i0kmok"><style type="text/css" media="screen">#f21ac82b21eeb7322631b6aa94e17f45i0kmok {position:absolute;top:0;left:0;right:auto;bottom:auto;margin:0;padding:0;border:0;width:200px;background:transparent;-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f45i0kmok div{float:left;width:144px;height:17px;line-height:17px;margin:3px 0 0 -2px;background:url(//ecma.bdimg.com/public03/imageplus/tip-back.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip-back.png');font-family:sans-serif;text-align:center;font-size:12px;color:#666;padding:8px 10px;display:none;-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f45i0kmok-icon {float:left;height:38px;width:38px;cursor:default;background:url(//ecma.bdimg.com/public03/imageplus/tip.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip.png');-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f45i0kmok-icon:hover {float:left;height:38px;width:38px;}#f21ac82b21eeb7322631b6aa94e17f45i0kmok #f21ac82b21eeb7322631b6aa94e17f45i0kmok-icon:hover {background:url(//ecma.bdimg.com/public03/imageplus/tip-hover.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip-hover.png');}</style><a href="javascript:void(0);" id="f21ac82b21eeb7322631b6aa94e17f45i0kmok-icon"></a><div id="f21ac82b21eeb7322631b6aa94e17f45i0kmok-msg">查看标识获取更多信息</div></div><style type="text/css" media="screen" id="s-f21ac82b21eeb7322631b6aa94e17f45110519a">.baiduimageplus-s-pa{position:relative;width:100%;height:110px;overflow:hidden;cursor:default;-webkit-transition:top .5s;-moz-transition:top .5s;-ms-transition:top .5s;-o-transition:top .5s;transition:top .5s}.baiduimageplus-s-pa p{background:none}.baiduimageplus-s-pa a{outline:0;text-decoration:none}.baiduimageplus-s-pa a:hover{text-decoration:underline}.baiduimageplus-s-pa .baiduimageplus-s-pa-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}.baiduimageplus-s-pa .baiduimageplus-s-pa-ct{position:relative;z-index:2}.baiduimageplus-s-pa .baiduimageplus-s-pa-hd{height:26px;overflow:hidden;line-height:26px}.baiduimageplus-s-pa .baiduimageplus-s-pa-hd .baiduimageplus-s-pa-hd-title-cell{font-size:14px;color:#FFF;height:100%;text-align:center!important;float:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-right:1px solid #FFF}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu{position:relative;overflow:hidden;zoom:1;padding:0;margin:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper{width:90%;height:84px;float:left;overflow:hidden;position:relative;left:5px}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter{height:84px;overflow:hidden;position:absolute;left:0;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell{width:100px;height:72px;overflow:hidden;background-color:#FFF;margin:4px 5px;padding:0;float:left;border:2px solid #000;position:relative}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover{border-color:#d1111c}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover .baiduimageplus-s-pa-bd-lu-title{background-color:#d1111c}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover img{-webkit-transform:scale(1.2);-moz-transform:scale(1.2);-ms-transform:scale(1.2);-o-transform:scale(1.2);transform:scale(1.2)}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell img{width:100px;height:50px;display:block;border:0;-webkit-transition:transform .5s;-moz-transition:transform .5s;-ms-transition:transform .5s;-o-transition:transform .5s;transition:transform .5s}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell .baiduimageplus-s-pa-bd-lu-title{position:absolute;font:14px/1.5 arial,sans-serif;bottom:0;left:0;width:100%;height:22px;display:block;line-height:22px;background-color:#000;text-align:center;color:#FFF}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:first-child{margin-left:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:last-child{margin-right:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .ad-widget-imgps-sticker-html-btn{margin-top:5px;height:75px;width:20px;cursor:pointer;-webkit-transition:background .4s;-moz-transition:background .4s;-ms-transition:background .4s;-o-transition:background .4s;transition:background .4s}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_left{width:20px;float:left;background:url(http://ecmb.bdimg.com/public03/imageplus/sticker/leftbtn.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_left:hover{background:#20439d url(http://ecmb.bdimg.com/public03/sticker/leftbtn_hover.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_right{width:20px;float:right;background:url(http://ecmb.bdimg.com/public03/imageplus/sticker/rightbtn.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_right:hover{background:#20439d url(http://ecmb.bdimg.com/public03/sticker/rightbtn_hover.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-logo{position:absolute;bottom:0;right:0;z-index:3;height:18px;width:18px;text-indent:-9999px;background:url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position:0 0;_filter:progid:dximagetransform.microsoft.alphaimageloader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png",sizingMethod="crop");_background:none}
+.ad-widget-imageplus-sticker{font:12px/1.5 arial,sans-serif;position:absolute;left:0;width:100%;display:none;overflow:hidden;color:#FFF;background:transparent;-webkit-transition:height .5s,top .5s;transition:height .5s,top .5s}.ad-widget-imageplus-sticker div{background:transparent}.ad-widget-imageplus-sticker-cut{display:block}.ad-widget-imageplus-sticker-bg{position:absolute;z-index:1;left:0;top:0;width:100%;height:100%;background:#000!important;box-shadow:2px 2px 4px #000}.ad-widget-imageplus-sticker-bd{position:relative;z-index:2;left:0;top:0;width:100%;overflow:hidden}.ad-widget-imageplus-sticker-close{position:absolute;z-index:3;right:0;top:5px;width:25px;height:25px;line-height:25px;text-decoration:none;text-align:center;font-size:18px;color:#FFF!important}.ad-widget-imageplus-sticker-close:hover{background-color:#000}
+.ad-widget-imageplus-sticker-theme-white{color:#333}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-bg{background:#FFF!important;box-shadow:2px 2px 4px #FFF}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-close{color:#666!important}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-close:hover{background-color:#FFF!important}.ad-widget-imageplus-sticker-theme-none{color:#333}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-close{color:#666!important}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-close:hover{background-color:#FFF!important}.ad-widget-imageplus-sticker-theme-none-white{color:#333}
+.ad-widget-imageplus-sticker-theme-none-white .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none-white-2 .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none-white-2 .ad-widget-imageplus-sticker-close{top:0;text-indent:-9999px;background:url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent}.ad-widget-imageplus-sticker-theme-v2 .ad-big-title{position:relative;top:0;opacity:1;filter:alpha(opacity=100);-webkit-transition:top .5s,opacity .6s;transition:top .5s,opacity .6s}.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-showing .ad-big-title{position:relative;top:-36px;opacity:0;filter:alpha(opacity=0)}.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-showing .ad-widget-imageplus-sticker-bg{top:26px}
+.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-close{top:0;text-indent:-9999px;background:url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent}.ad-widget-imageplus-sticker-thumbnail{font:12px/1.5 arial,sans-serif;position:absolute;right:0;top:0;height:20px;width:100px;overflow:hidden;background:transparent;-webkit-transition:height .5s;-moz-transition:height .5s;-ms-transition:height .5s;-o-transition:height .5s;transition:height .5s;background-color:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000)}.ad-widget-imageplus-sticker-thumbnail a{float:right;width:100px;height:20px;line-height:20px;text-align:center;color:white;background:transparent;text-decoration:none}
+.ad-widget-imageplus-sticker-thumbnail i{width:12px;height:8px;margin-top:6px;margin-left:5px;display:block;float:left;background:url('http://ecma.bdimg.com/adtest/8e547549c94ab88c81b644d5ff63b0d3.png') no-repeat 0 0;background:none \9;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='http://ecma.bdimg.com/adtest/8e547549c94ab88c81b644d5ff63b0d3.png')\9}.ad-widget-imageplus-sticker-close-newstyle{top:0;text-indent:-9999px;background:url(http://ecmb.bdimg.com/public03/v2/dock/iconfont-close.png) no-repeat 0 0 transparent!important}.ad-widget-imageplus-sticker-showing .baiduimageplus-s-pa-hd{opacity:0;filter:alpha(opacity=0)}</style><div id="f21ac82b21eeb7322631b6aa94e17f45110519a" data-rendered="true" style="margin: 0px; padding: 0px; border: none; overflow: visible; text-align: left;"><div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-theme-v2 ad-widget-imageplus-sticker-cut" id="w-df0djt" style="display: block; top: 307px; height: 109px;">
+<div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-wrapper ad-widget-imageplus-sticker-box-showing ad-widget-imageplus-sticker-showing" id="w-df0djt-wrapper" style="display: block; top: -1px; height: 110px;">
+<div class="ad-widget-imageplus-sticker-bg" id="w-df0djt-background" style="opacity: 0.75;"></div>
+<div class="ad-widget-imageplus-sticker-bd" id="w-df0djt-body">
+<div class="baiduimageplus-s-pa" id="w-kkqjcc">
+<div class="baiduimageplus-s-pa-bg" id="w-kkqjcc-background"></div>
+<div class="baiduimageplus-s-pa-ct">
+<div class="baiduimageplus-s-pa-hd">
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 120px !important;">尾盘怎么选股</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 120px !important;">网页制作模板</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 120px !important;">尾盘选股方法</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 120px !important;">明天涨停的股票</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 120px !important; border: none !important;">学习网页设计</div>
+<div class="baiduimageplus-s-pa-hd-title-cell">如何看k线</div>
+</div>
+<div class="baiduimageplus-s-pa-bd-lu">
+<div id="w-kkqjcc-left_btn" class="ad-widget-imgps-sticker-html-btn adwishbtn_left" style="display:none;"></div>
+<div id="w-kkqjcc-wrapper" class="baiduimageplus-s-pa-bd-lu-wrapper" style="width: 594px !important;">
+<div id="w-kkqjcc-outter" class="baiduimageplus-s-pa-bd-lu-outter" style="width: 679px !important;">
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRP7FRczFRndFRPjFRfYFRmdFRn1FRcYFRfkFRDkFRc4FRn4Fh_s5iNjwiNanBNjPiNjfzNDPaNAPiNjnzNaPaNDniNKniNariNjriuonHY-fYf-wW6-wjc-fWn-wjm-f1m-wjT-wWT-f1f-fHn-fW0-wHRhp1cqFRP7FRczFRndFRPjFRfkFRDkFRc4FRn4FRcLFRFDFRcLFRD3Fh_15iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNaPiNjPaNariNjriNjPBNaniuoPjY-wjD-fHT-fYm-fW0-fYf-wW6-wjc-fWn-f1b-wH6-fbn-f1mhp1RqFRn3FRRLFRFKFRP7FRFAFRcYpzNjwBNDwBu_IyVG5HDhUyPsUHYvnWfdniuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5Hc4uHIWuAD4&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=31301567,1380913500&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRP7FRczFRndFRPjFRfYFRmdFRn1FRcYFRfkFRDkFRc4FRn4Fh_s5iNjwiNanBNjPiNjfzNDPaNAPiNjnzNaPaNDniNKniNariNjriuonHY-fYf-wW6-wjc-fWn-wjm-f1m-wjT-wWT-f1f-fHn-fW0-wHRhp1cqFRP7FRczFRndFRPjFRfkFRDkFRc4FRn4FRcLFRFDFRcLFRD3Fh_15iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNaPiNjPaNariNjriNjPBNaniuoPjY-wjD-fHT-fYm-fW0-fYf-wW6-wjc-fWn-f1b-wH6-fbn-f1mhp1RqFRn3FRRLFRFKFRP7FRFAFRcYpzNjwBNDwBu_IyVG5HDhUyPsUHYvnWfdniuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5Hc4uHIWuAD4&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">尾盘怎么选股</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRnYFRD1FRcsFRRdFh_s5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNjPaNKnzNanaN7PiuonHY-fYR-fWc-f1R-fYn-wjD-fHD-fWb-f1b-fWT-fbf-fWT-fH6hp1cqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_15iNDniNKPzNjwBNanaNjwaNAraNDnBNanzNjriN7raNafzNjPBuoPjY-f16-wHT-fbD-fYR-fbm-fWwoFRPAFRwAFh_d5iNanzNaPaNariNjriNjniNAriNawiN7PaNawBNDfiNawiNAPzu_IyVG5HchUyPsUHYdPHDLPiuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HFbrymzmyD3&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=1846728873,2596895879&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRnYFRD1FRcsFRRdFh_s5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNjPaNKnzNanaN7PiuonHY-fYR-fWc-f1R-fYn-wjD-fHD-fWb-f1b-fWT-fbf-fWT-fH6hp1cqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_15iNDniNKPzNjwBNanaNjwaNAraNDnBNanzNjriN7raNafzNjPBuoPjY-f16-wHT-fbD-fYR-fbm-fWwoFRPAFRwAFh_d5iNanzNaPaNariNjriNjniNAriNawiN7PaNawBNDfiNawiNAPzu_IyVG5HchUyPsUHYdPHDLPiuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HFbrymzmyD3&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">网页制作模板</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRP7FRczFRndFRPjFRfkFRDkFRc4FRn4FRcLFRFDFRcLFRD3Fh_s5iNjwiNanBNjPiNjfzNDniNKniNariNjriNaPzNawaNaPzNKrauonHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhp1cqFRfkFRDLFRPAFRcsFRPDFRm3FRfzFRc1FRn4FRR3FRFjFRnvFh_15iNjraN7PzNafiNjwiNawBNaPA_-fYm-wDmhp1fqFRc1FRcYFRc4FRn4FRnkFRm4FRF7FRRYFRFAFRwKFRF7FRmLFh_d5iNjwiNanBNjPiNjfzNDPaNAPiNjnzNaPaNDniNKniNariNjriu_IyVG5HnhUyPsUHY3nWcLnzuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HKbmWD4nvNb&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=3226321237,3314944104&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRP7FRczFRndFRPjFRfkFRDkFRc4FRn4FRcLFRFDFRcLFRD3Fh_s5iNjwiNanBNjPiNjfzNDniNKniNariNjriNaPzNawaNaPzNKrauonHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhp1cqFRfkFRDLFRPAFRcsFRPDFRm3FRfzFRc1FRn4FRR3FRFjFRnvFh_15iNjraN7PzNafiNjwiNawBNaPA_-fYm-wDmhp1fqFRc1FRcYFRc4FRn4FRnkFRm4FRF7FRRYFRFAFRwKFRF7FRmLFh_d5iNjwiNanBNjPiNjfzNDPaNAPiNjnzNaPaNDniNKniNariNjriu_IyVG5HnhUyPsUHY3nWcLnzuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HKbmWD4nvNb&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">尾盘选股方法</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_s5iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNaPiNjPaNariNjriNjPBNaniuonHY-wjD-fHT-fYm-fW0-fYf-wW6-wjc-fWn-f1b-wH6-fbn-f1mhp1cqFRn3FRRLFRFKFRP7FRFAFRcYpzNjwBNDwBuon1Y-fWn-fWf-fWb-f1b-f1D-wWb-fbR-wHf-fbm-wDD-fbR-wWThp1fqFRP7FRczFRndFRPjFRfYFRmdFRn1FRcYFRfkFRDkFRc4FRn4Fh_d5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNjPaNKnzNanaN7Piu_IyVG5HfhUyPsUHY3P1fvPauk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HfknhDsmHD3&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=1563199498,1052210559&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_s5iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNaPiNjPaNariNjriNjPBNaniuonHY-wjD-fHT-fYm-fW0-fYf-wW6-wjc-fWn-f1b-wH6-fbn-f1mhp1cqFRn3FRRLFRFKFRP7FRFAFRcYpzNjwBNDwBuon1Y-fWn-fWf-fWb-f1b-f1D-wWb-fbR-wHf-fbm-wDD-fbR-wWThp1fqFRP7FRczFRndFRPjFRfYFRmdFRn1FRcYFRfkFRDkFRc4FRn4Fh_d5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNjPaNKnzNanaN7Piu_IyVG5HfhUyPsUHY3P1fvPauk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HfknhDsmHD3&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">明天涨停的股票</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRfkFRDLFRPAFRcsFRPDFRm3FRfzFRc1FRn4FRR3FRFjFRnvFh_s5iNDniNKPzNjwBNanaNjwaNAraNDnBNanzNjriN7raNafzNjPBuonHY-f16-wHT-fbD-fYR-fbm-fWwoFRPAFRwAFh_z5iNanzNaPaNariNjriNjniNAriNawiN7PaNawBNDfiNawiNAPzuon1Y-fYR-fWc-f1R-fYn-wjf-wWR-f1n-fWf-wjD-fHD-fWb-f1bhp1fqFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRnYFRD1FRcsFRRdFh_d5iNjwiNanBNjPiNjfzNDniNKniNariNjriNaPzNawaNaPzNKrau_IyVG5HRhUyPsUHYYrHbvriuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5Hf3PWF9njT4&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=3565955496,699129024&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRfkFRDLFRPAFRcsFRPDFRm3FRfzFRc1FRn4FRR3FRFjFRnvFh_s5iNDniNKPzNjwBNanaNjwaNAraNDnBNanzNjriN7raNafzNjPBuonHY-f16-wHT-fbD-fYR-fbm-fWwoFRPAFRwAFh_z5iNanzNaPaNariNjriNjniNAriNawiN7PaNawBNDfiNawiNAPzuon1Y-fYR-fWc-f1R-fYn-wjf-wWR-f1n-fWf-wjD-fHD-fWb-f1bhp1fqFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRnYFRD1FRcsFRRdFh_d5iNjwiNanBNjPiNjfzNDniNKniNariNjriNaPzNawaNaPzNKrau_IyVG5HRhUyPsUHYYrHbvriuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfquymknyFBuWmvnHNhryRLuau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3nzuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5Hf3PWF9njT4&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">学习网页设计</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRn3FRRLFRFKFRP7FRFAFRcYpzNjwBNDwBuonjY-f16-wHT-fbD-fYR-fbm-fWwoFRPAFRwAFh_k5iNanzNaPaNariNjriNjniNAriNawiN7PaNawBNDfiNawiNAPzuonWY-fYR-fWc-f1R-fYn-wjf-wWR-f1n-fWf-wjD-fHD-fWb-f1bhp1nqFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRnYFRD1FRcsFRRdFh_Y5iNjwiNanBNjPiNjfzNDniNKniNariNjriNaPzNawaNaPzNKrauoPHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhUZNopHYvFhdWTAYqPHcLP1fhTHdJmWRkgvPsTBuzmWYkFMF15HDhTvN_UANzgv-b5HRhTv-b5yNhnH7BmhmvPWDduW--PvfhTLwGujYznBuY5gwsmvkGmvV-ujPxpAnhIAd15HDdnW0LP104rjnhIZRqIHD3rHnsnHfhIHdCIZwsFHPKFHFAFHFAILILFHF7phcdniRzwy4-Iauv5HDhpHdBPhN-mhDLms&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=1845232931,2762755115&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YLuj--PymvnymvmhcknyNhFh_qFRn3FRRLFRFKFRP7FRFAFRcYpzNjwBNDwBuonjY-f16-wHT-fbD-fYR-fbm-fWwoFRPAFRwAFh_k5iNanzNaPaNariNjriNjniNAriNawiN7PaNawBNDfiNawiNAPzuonWY-fYR-fWc-f1R-fYn-wjf-wWR-f1n-fWf-wjD-fHD-fWb-f1bhp1nqFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRnYFRD1FRcsFRRdFh_Y5iNjwiNanBNjPiNjfzNDniNKniNariNjriNaPzNawaNaPzNKrauoPHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhUZNopHYvFhdWTAYqPHcLP1fhTHdJmWRkgvPsTBuzmWYkFMF15HDhTvN_UANzgv-b5HRhTv-b5yNhnH7BmhmvPWDduW--PvfhTLwGujYznBuY5gwsmvkGmvV-ujPxpAnhIAd15HDdnW0LP104rjnhIZRqIHD3rHnsnHfhIHdCIZwsFHPKFHFAFHFAILILFHF7phcdniRzwy4-Iauv5HDhpHdBPhN-mhDLms&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">如何看k线</a>
+</div>
+</div>
+</div>
+<div id="w-kkqjcc-right_btn" class="ad-widget-imgps-sticker-html-btn adwishbtn_right" style="display:none;"></div>
+</div>
+</div>
+<a class="baiduimageplus-s-pa-logo" title="百度网盟推广" href="http://wangmeng.baidu.com/" target="_blank" data-ignore=""></a>
+<!-- 新增的推广提示 -->
+<div style="position:absolute;left:0px;bottom:0px;width:29px;height:16px;overflow:hidden;z-index:12;background: url(http://ecmb.bdimg.com/public03/imageplus/leftbottom.png) no-repeat;"></div>
+</div>
+</div>
+</div>
+<a class="ad-widget-imageplus-sticker-close " href="http://www.jb51.net/css/493362.html#" id="w-df0djt-close">X</a>
+</div>
+<div class="ad-widget-imageplus-sticker-thumbnail" id="w-df0djt-thumbnail" style="display: none; top: 396px;">
+<a href="http://www.jb51.net/css/493362.html#" title="点击展开"><i>&nbsp;</i>图片相关信息</a>
+</div></div></div><div style="position: absolute; border: 0px; margin: 0px; padding: 0px; height: 0px; overflow: visible; text-align: left; top: 8767.8px; left: 225px; width: 654px; display: block;"><div id="f21ac82b21eeb7322631b6aa94e17f458ve6ai"><style type="text/css" media="screen">#f21ac82b21eeb7322631b6aa94e17f458ve6ai {position:absolute;top:0;left:0;right:auto;bottom:auto;margin:0;padding:0;border:0;width:200px;background:transparent;-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f458ve6ai div{float:left;width:144px;height:17px;line-height:17px;margin:3px 0 0 -2px;background:url(//ecma.bdimg.com/public03/imageplus/tip-back.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip-back.png');font-family:sans-serif;text-align:center;font-size:12px;color:#666;padding:8px 10px;display:none;-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f458ve6ai-icon {float:left;height:38px;width:38px;cursor:default;background:url(//ecma.bdimg.com/public03/imageplus/tip.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip.png');-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f458ve6ai-icon:hover {float:left;height:38px;width:38px;}#f21ac82b21eeb7322631b6aa94e17f458ve6ai #f21ac82b21eeb7322631b6aa94e17f458ve6ai-icon:hover {background:url(//ecma.bdimg.com/public03/imageplus/tip-hover.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip-hover.png');}</style><a href="javascript:void(0);" id="f21ac82b21eeb7322631b6aa94e17f458ve6ai-icon"></a><div id="f21ac82b21eeb7322631b6aa94e17f458ve6ai-msg">查看标识获取更多信息</div></div><style type="text/css" media="screen" id="s-f21ac82b21eeb7322631b6aa94e17f452exjz5w">.baiduimageplus-s-pa{position:relative;width:100%;height:110px;overflow:hidden;cursor:default;-webkit-transition:top .5s;-moz-transition:top .5s;-ms-transition:top .5s;-o-transition:top .5s;transition:top .5s}.baiduimageplus-s-pa p{background:none}.baiduimageplus-s-pa a{outline:0;text-decoration:none}.baiduimageplus-s-pa a:hover{text-decoration:underline}.baiduimageplus-s-pa .baiduimageplus-s-pa-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}.baiduimageplus-s-pa .baiduimageplus-s-pa-ct{position:relative;z-index:2}.baiduimageplus-s-pa .baiduimageplus-s-pa-hd{height:26px;overflow:hidden;line-height:26px}.baiduimageplus-s-pa .baiduimageplus-s-pa-hd .baiduimageplus-s-pa-hd-title-cell{font-size:14px;color:#FFF;height:100%;text-align:center!important;float:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-right:1px solid #FFF}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu{position:relative;overflow:hidden;zoom:1;padding:0;margin:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper{width:90%;height:84px;float:left;overflow:hidden;position:relative;left:5px}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter{height:84px;overflow:hidden;position:absolute;left:0;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell{width:100px;height:72px;overflow:hidden;background-color:#FFF;margin:4px 5px;padding:0;float:left;border:2px solid #000;position:relative}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover{border-color:#d1111c}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover .baiduimageplus-s-pa-bd-lu-title{background-color:#d1111c}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover img{-webkit-transform:scale(1.2);-moz-transform:scale(1.2);-ms-transform:scale(1.2);-o-transform:scale(1.2);transform:scale(1.2)}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell img{width:100px;height:50px;display:block;border:0;-webkit-transition:transform .5s;-moz-transition:transform .5s;-ms-transition:transform .5s;-o-transition:transform .5s;transition:transform .5s}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell .baiduimageplus-s-pa-bd-lu-title{position:absolute;font:14px/1.5 arial,sans-serif;bottom:0;left:0;width:100%;height:22px;display:block;line-height:22px;background-color:#000;text-align:center;color:#FFF}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:first-child{margin-left:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:last-child{margin-right:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .ad-widget-imgps-sticker-html-btn{margin-top:5px;height:75px;width:20px;cursor:pointer;-webkit-transition:background .4s;-moz-transition:background .4s;-ms-transition:background .4s;-o-transition:background .4s;transition:background .4s}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_left{width:20px;float:left;background:url(http://ecmb.bdimg.com/public03/imageplus/sticker/leftbtn.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_left:hover{background:#20439d url(http://ecmb.bdimg.com/public03/sticker/leftbtn_hover.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_right{width:20px;float:right;background:url(http://ecmb.bdimg.com/public03/imageplus/sticker/rightbtn.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_right:hover{background:#20439d url(http://ecmb.bdimg.com/public03/sticker/rightbtn_hover.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-logo{position:absolute;bottom:0;right:0;z-index:3;height:18px;width:18px;text-indent:-9999px;background:url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position:0 0;_filter:progid:dximagetransform.microsoft.alphaimageloader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png",sizingMethod="crop");_background:none}
+.ad-widget-imageplus-sticker{font:12px/1.5 arial,sans-serif;position:absolute;left:0;width:100%;display:none;overflow:hidden;color:#FFF;background:transparent;-webkit-transition:height .5s,top .5s;transition:height .5s,top .5s}.ad-widget-imageplus-sticker div{background:transparent}.ad-widget-imageplus-sticker-cut{display:block}.ad-widget-imageplus-sticker-bg{position:absolute;z-index:1;left:0;top:0;width:100%;height:100%;background:#000!important;box-shadow:2px 2px 4px #000}.ad-widget-imageplus-sticker-bd{position:relative;z-index:2;left:0;top:0;width:100%;overflow:hidden}.ad-widget-imageplus-sticker-close{position:absolute;z-index:3;right:0;top:5px;width:25px;height:25px;line-height:25px;text-decoration:none;text-align:center;font-size:18px;color:#FFF!important}.ad-widget-imageplus-sticker-close:hover{background-color:#000}
+.ad-widget-imageplus-sticker-theme-white{color:#333}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-bg{background:#FFF!important;box-shadow:2px 2px 4px #FFF}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-close{color:#666!important}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-close:hover{background-color:#FFF!important}.ad-widget-imageplus-sticker-theme-none{color:#333}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-close{color:#666!important}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-close:hover{background-color:#FFF!important}.ad-widget-imageplus-sticker-theme-none-white{color:#333}
+.ad-widget-imageplus-sticker-theme-none-white .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none-white-2 .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none-white-2 .ad-widget-imageplus-sticker-close{top:0;text-indent:-9999px;background:url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent}.ad-widget-imageplus-sticker-theme-v2 .ad-big-title{position:relative;top:0;opacity:1;filter:alpha(opacity=100);-webkit-transition:top .5s,opacity .6s;transition:top .5s,opacity .6s}.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-showing .ad-big-title{position:relative;top:-36px;opacity:0;filter:alpha(opacity=0)}.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-showing .ad-widget-imageplus-sticker-bg{top:26px}
+.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-close{top:0;text-indent:-9999px;background:url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent}.ad-widget-imageplus-sticker-thumbnail{font:12px/1.5 arial,sans-serif;position:absolute;right:0;top:0;height:20px;width:100px;overflow:hidden;background:transparent;-webkit-transition:height .5s;-moz-transition:height .5s;-ms-transition:height .5s;-o-transition:height .5s;transition:height .5s;background-color:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000)}.ad-widget-imageplus-sticker-thumbnail a{float:right;width:100px;height:20px;line-height:20px;text-align:center;color:white;background:transparent;text-decoration:none}
+.ad-widget-imageplus-sticker-thumbnail i{width:12px;height:8px;margin-top:6px;margin-left:5px;display:block;float:left;background:url('http://ecma.bdimg.com/adtest/8e547549c94ab88c81b644d5ff63b0d3.png') no-repeat 0 0;background:none \9;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='http://ecma.bdimg.com/adtest/8e547549c94ab88c81b644d5ff63b0d3.png')\9}.ad-widget-imageplus-sticker-close-newstyle{top:0;text-indent:-9999px;background:url(http://ecmb.bdimg.com/public03/v2/dock/iconfont-close.png) no-repeat 0 0 transparent!important}.ad-widget-imageplus-sticker-showing .baiduimageplus-s-pa-hd{opacity:0;filter:alpha(opacity=0)}</style><div id="f21ac82b21eeb7322631b6aa94e17f452exjz5w" data-rendered="true" style="margin: 0px; padding: 0px; border: none; overflow: visible; text-align: left;"><div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-theme-v2 ad-widget-imageplus-sticker-cut" id="w-z2d4ys" style="display: block; top: 523px; height: 109px;">
+<div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-wrapper ad-widget-imageplus-sticker-box-showing ad-widget-imageplus-sticker-showing" id="w-z2d4ys-wrapper" style="display: block; top: -1px; height: 110px;">
+<div class="ad-widget-imageplus-sticker-bg" id="w-z2d4ys-background" style="opacity: 0.75;"></div>
+<div class="ad-widget-imageplus-sticker-bd" id="w-z2d4ys-body">
+<div class="baiduimageplus-s-pa" id="w-trzidk">
+<div class="baiduimageplus-s-pa-bg" id="w-trzidk-background"></div>
+<div class="baiduimageplus-s-pa-ct">
+<div class="baiduimageplus-s-pa-hd">
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">html5培训</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">十大炒股软件</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">ps入门学习</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">明天涨停股票</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important; border: none !important;">网页制作方法</div>
+<div class="baiduimageplus-s-pa-hd-title-cell">周线选股技巧</div>
+</div>
+<div class="baiduimageplus-s-pa-bd-lu">
+<div id="w-trzidk-left_btn" class="ad-widget-imgps-sticker-html-btn adwishbtn_left" style="display:none;"></div>
+<div id="w-trzidk-wrapper" class="baiduimageplus-s-pa-bd-lu-wrapper" style="width: 644px !important;">
+<div id="w-trzidk-outter" class="baiduimageplus-s-pa-bd-lu-outter" style="width: 679px !important;">
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qpZwVUjR-f1R-wH0-wjD-fWRhp10qpZwVUjR-f1R-wH0-wjD-fWRhp1DqFRPKFR77FRcYFRm1FRc1FRcYFRc4FRn4FRn3FRNDFRFjFRu7Fh_z5gK1FRn3FRNaFRn1FRndFRfkFRDLFRPAFRcsFh_15iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNariNjriNjPBNaniuoPjY-fYf-wW6-wjc-fWn-wjm-f1m-wjT-wWT-fWT-fbf-fWT-fH6hp1RqFRfvFRwjFRPAFRwAFRfkFRDkFRc4FRn4FRFjFRFjFRnLFRn4FhkdpvbqniuVmLKV5Hm1nWDvFMDqphcdnNqWTZchThcqniuzT1YkFMP-UAk-T-qGujYdFMPGujdBujnYny79PWnkPhf1PyNbFMPYpyfqnWchIjdYTAP_pyPouyf1gv9WFMwVT1YkPHcsP1TsrH6dFMwd5gRkrjb1njDYFMRqpZwYTaR1fiRzwBRzwMILIzRzwyGBPHD-nbN8ugfhIWYkFhbqmvRLmyckuAf&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=141774889,1493327870&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qpZwVUjR-f1R-wH0-wjD-fWRhp10qpZwVUjR-f1R-wH0-wjD-fWRhp1DqFRPKFR77FRcYFRm1FRc1FRcYFRc4FRn4FRn3FRNDFRFjFRu7Fh_z5gK1FRn3FRNaFRn1FRndFRfkFRDLFRPAFRcsFh_15iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNariNjriNjPBNaniuoPjY-fYf-wW6-wjc-fWn-wjm-f1m-wjT-wWT-fWT-fbf-fWT-fH6hp1RqFRfvFRwjFRPAFRwAFRfkFRDkFRc4FRn4FRFjFRFjFRnLFRn4FhkdpvbqniuVmLKV5Hm1nWDvFMDqphcdnNqWTZchThcqniuzT1YkFMP-UAk-T-qGujYdFMPGujdBujnYny79PWnkPhf1PyNbFMPYpyfqnWchIjdYTAP_pyPouyf1gv9WFMwVT1YkPHcsP1TsrH6dFMwd5gRkrjb1njDYFMRqpZwYTaR1fiRzwBRzwMILIzRzwyGBPHD-nbN8ugfhIWYkFhbqmvRLmyckuAf&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">html5培训</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRPKFR77FRcYFRm1FRc1FRcYFRc4FRn4FRn3FRNDFRFjFRu7Fh_s5iNjfiNKwiNaPaNAnzNanzNaPaNariNjriNjraN7waNafzNAwiuonHdsTzNjraN7fBNjnzNjPiNDniNKPzNjwBNanauonWY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWb-f1b-f1m-fWDhp1nqFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRcLFRFDFRcLFRD3Fh_Y5iNDPBNDfzNjwBNDwBNDniNKniNariNjriNafzNafzNjPzNjriuoPHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhUZNopHYzFhdWTAYqPHTknHnhTHdJmWRkgvPsTBuzmWYkFMF15HDhTvN_UANzgv-b5HRhTv-b5yFbn1fkmyDvn1DvujnduyfhTLwGujYznBuY5gwsmvkGmvV-ujPxpAnhIAd15HDdnW0LP104rjRhIZRqIHD3rHnsnHfhIHdCIZwsFHPKFHFAFHFAILILFHF7phcdniRzwy4-Iauv5HDhpHdBuyw-nAFBn0&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=2591542253,3448055853&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRPKFR77FRcYFRm1FRc1FRcYFRc4FRn4FRn3FRNDFRFjFRu7Fh_s5iNjfiNKwiNaPaNAnzNanzNaPaNariNjriNjraN7waNafzNAwiuonHdsTzNjraN7fBNjnzNjPiNDniNKPzNjwBNanauonWY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWb-f1b-f1m-fWDhp1nqFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRcLFRFDFRcLFRD3Fh_Y5iNDPBNDfzNjwBNDwBNDniNKniNariNjriNafzNafzNjPzNjriuoPHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhUZNopHYzFhdWTAYqPHTknHnhTHdJmWRkgvPsTBuzmWYkFMF15HDhTvN_UANzgv-b5HRhTv-b5yFbn1fkmyDvn1DvujnduyfhTLwGujYznBuY5gwsmvkGmvV-ujPxpAnhIAd15HDdnW0LP104rjRhIZRqIHD3rHnsnHfhIHdCIZwsFHPKFHFAFHFAILILFHF7phcdniRzwy4-Iauv5HDhpHdBuyw-nAFBn0&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">十大炒股软件</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qTZn-f16-wRc-f1n-f1R-wjD-fHT-fYm-fW0hp10qTZn-f16-wRc-f1n-f1R-wjD-fHT-fYm-fW0hp1DqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRc4FRn4FRnvFRckFh_z5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNaPzNawaNaPzNKrauon1Y-wjm-wDn-fYm-wDm-wjD-fHD-fWb-f1b-fbn-fbn-f1T-f1bhp1fqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_d5y9YUysdFRndFRRsFRfkFRcdFhkdpvbqnzuVmLKV5Hc4P1mzFMDqphcdnNqWTZchThcqniuzT1YkFMP-UAk-T-qGujYdFMPGujdBujnYny79PWnkPhf1PyNbFMPYpyfqnWchIjdYTAP_pyPouyf1gv9WFMwVT1YkPHcsP1TsrH6dFMwd5gRkrjb1njDYFMRqpZwYTaR1fiRzwBRzwMILIzRzwyGBPHD-nbN8ugfhIWYkFhbqPAnvmhwBuHm&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=961804774,1374781407&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qTZn-f16-wRc-f1n-f1R-wjD-fHT-fYm-fW0hp10qTZn-f16-wRc-f1n-f1R-wjD-fHT-fYm-fW0hp1DqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRc4FRn4FRnvFRckFh_z5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNaPzNawaNaPzNKrauon1Y-wjm-wDn-fYm-wDm-wjD-fHD-fWb-f1b-fbn-fbn-f1T-f1bhp1fqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_d5y9YUysdFRndFRRsFRfkFRcdFhkdpvbqnzuVmLKV5Hc4P1mzFMDqphcdnNqWTZchThcqniuzT1YkFMP-UAk-T-qGujYdFMPGujdBujnYny79PWnkPhf1PyNbFMPYpyfqnWchIjdYTAP_pyPouyf1gv9WFMwVT1YkPHcsP1TsrH6dFMwd5gRkrjb1njDYFMRqpZwYTaR1fiRzwBRzwMILIzRzwyGBPHD-nbN8ugfhIWYkFhbqPAnvmhwBuHm&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">ps入门学习</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRc4FRn4FRnvFRckFh_s5iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNariNjriNjPBNaniuonHY-fYf-wW6-wjc-fWn-wjm-f1m-wjT-wWT-fWT-fbf-fWT-fH6hp1cqFRfvFRwjFRPAFRwAFRfkFRDkFRc4FRn4FRFjFRFjFRnLFRn4Fh_15iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNaPiNjPaNariNjriNjPBNaniuoPjdCIAd_PiNjPiN7naNDniNaPiuoPHY-fYD-fRR-fWf-wWn-fWn-fWf-fWb-f1b-f16-wRf-fbn-wbRhUZNopHYYFhdWTAYqrjfdPWmhTHdJmWRkgvPsTBuzmWYkFMF15HDhTvN_UANzgv-b5HRhTv-b5yFbn1fkmyDvn1DvujnduyfhTLwGujYznBuY5gwsmvkGmvV-ujPxpAnhIAd15HDdnW0LP104rjRhIZRqIHD3rHnsnHfhIHdCIZwsFHPKFHFAFHFAILILFHF7phcdniRzwy4-Iauv5HDhpHdbPAmzmvubns&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=113413674,1322808168&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRc4FRn4FRnvFRckFh_s5iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNariNjriNjPBNaniuonHY-fYf-wW6-wjc-fWn-wjm-f1m-wjT-wWT-fWT-fbf-fWT-fH6hp1cqFRfvFRwjFRPAFRwAFRfkFRDkFRc4FRn4FRFjFRFjFRnLFRn4Fh_15iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNaPiNjPaNariNjriNjPBNaniuoPjdCIAd_PiNjPiN7naNDniNaPiuoPHY-fYD-fRR-fWf-wWn-fWn-fWf-fWb-f1b-f16-wRf-fbn-wbRhUZNopHYYFhdWTAYqrjfdPWmhTHdJmWRkgvPsTBuzmWYkFMF15HDhTvN_UANzgv-b5HRhTv-b5yFbn1fkmyDvn1DvujnduyfhTLwGujYznBuY5gwsmvkGmvV-ujPxpAnhIAd15HDdnW0LP104rjRhIZRqIHD3rHnsnHfhIHdCIZwsFHPKFHFAFHFAILILFHF7phcdniRzwy4-Iauv5HDhpHdbPAmzmvubns&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">明天涨停股票</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRcLFRFDFRcLFRD3Fh_s5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNaPzNawaNaPzNKrauonHY-wjm-wDn-fYm-wDm-wjD-fHD-fWb-f1b-fbn-fbn-f1T-f1bhp1cqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_15y9YUysdFRndFRRsFRfkFRcdFh_Y5iNjfiNKwiNaPaNAnzNanzNaPaNariNjriNjraN7waNafzNAwiuoPHdsTzNjraN7fBNjnzNjPiNDniNKPzNjwBNanau_IyVG5HRhUyPsUHYvPH0YnBuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfqmhf1Pj79mHm1nHubn1N-uau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3PiuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HbkPj9-myn4&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=466105554,544452949&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRPDFRm3FRfzFRc1FRfvFRnvFRfLFRmLFRcLFRFDFRcLFRD3Fh_s5iNjwaNAraNDnBNanzNDPBNjPBNDPzNAPzNaPzNawaNaPzNKrauonHY-wjm-wDn-fYm-wDm-wjD-fHD-fWb-f1b-fbn-fbn-f1T-f1bhp1cqFRn1FRmLFRPjFRNjFRfdFRnLFRPDFRD1FRcdFRnYFRc4FRn4FRnvFRckFh_15y9YUysdFRndFRRsFRfkFRcdFh_Y5iNjfiNKwiNaPaNAnzNanzNaPaNariNjriNjraN7waNafzNAwiuoPHdsTzNjraN7fBNjnzNjPiNDniNKPzNjwBNanau_IyVG5HRhUyPsUHYvPH0YnBuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfqmhf1Pj79mHm1nHubn1N-uau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3PiuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HbkPj9-myn4&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">网页制作方法</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRfvFRwjFRPAFRwAFRfkFRDkFRc4FRn4FRFjFRFjFRnLFRn4Fh_s5iNDPBNDfzNjwBNDwBNDniNKniNariNjriNafzNafzNjPzNjriuonHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhp1cqpZwVUjR-f1R-wH0-wjD-fWRhp1nqFRPKFR77FRcYFRm1FRc1FRcYFRc4FRn4FRn3FRNDFRFjFRu7Fh_Y5gK1FRn3FRNaFRn1FRndFRfkFRDLFRPAFRcsFh_d5iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNariNjriNjPBNaniu_IyVG5HmhUyPsUHYdPW6kPzuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfqmhf1Pj79mHm1nHubn1N-uau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3PiuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HIBrHcsnyfv&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=1507520293,1228967426&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-ujndPhf1nyDvnyD1PAFbFh_qFRfvFRwjFRPAFRwAFRfkFRDkFRc4FRn4FRFjFRFjFRnLFRn4Fh_s5iNDPBNDfzNjwBNDwBNDniNKniNariNjriNafzNafzNjPzNjriuonHY-f1n-wWT-fYn-wRn-wjR-f1T-fYf-fHn-fWR-f1f-fWb-f1b-f1m-fWDhp1cqpZwVUjR-f1R-wH0-wjD-fWRhp1nqFRPKFR77FRcYFRm1FRc1FRcYFRc4FRn4FRn3FRNDFRFjFRu7Fh_Y5gK1FRn3FRNaFRn1FRndFRfkFRDLFRPAFRcsFh_d5iNjnzNAPzNjfzN7fzNDPiNjPzNjwaNKnzNariNjriNjPBNaniu_IyVG5HmhUyPsUHYdPW6kPzuk5yGBPH7xmLKzFMFB5HDhTMnqniu1uyk_ugFxpyfqPiu1pyfqmhf1Pj79mHm1nHubn1N-uau1IA-b5HczFMfqIZKWUA-WpvNbndqCmzuYUgnqnHRznjTLnjb3PiuYIHddnH64n10kPaud5y9YIZ0-nYD-nbm-nbuLILT-nbNJmWRkFHF7UhNYFMmqniuG5HIBrHcsnyfv&amp;c=news&amp;cf=1&amp;expid=9171_9536_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;itm=0&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;ssp2=1&amp;tsf=dtp:1&amp;u=%2Fcss%2F493362%2Ehtml&amp;urlid=0">周线选股技巧</a>
+</div>
+</div>
+</div>
+<div id="w-trzidk-right_btn" class="ad-widget-imgps-sticker-html-btn adwishbtn_right" style="display:none;"></div>
+</div>
+</div>
+<a class="baiduimageplus-s-pa-logo" title="百度网盟推广" href="http://wangmeng.baidu.com/" target="_blank" data-ignore=""></a>
+<!-- 新增的推广提示 -->
+<div style="position:absolute;left:0px;bottom:0px;width:29px;height:16px;overflow:hidden;z-index:12;background: url(http://ecmb.bdimg.com/public03/imageplus/leftbottom.png) no-repeat;"></div>
+</div>
+</div>
+</div>
+<a class="ad-widget-imageplus-sticker-close " href="http://www.jb51.net/css/493362.html#" id="w-z2d4ys-close">X</a>
+</div>
+<div class="ad-widget-imageplus-sticker-thumbnail" id="w-z2d4ys-thumbnail" style="display: none; top: 612px;">
+<a href="http://www.jb51.net/css/493362.html#" title="点击展开"><i>&nbsp;</i>图片相关信息</a>
+</div></div></div><div style="position: absolute; border: 0px; margin: 0px; padding: 0px; height: 0px; overflow: visible; text-align: left; top: 10288.8px; left: 225px; width: 654px; display: block;"><div id="f21ac82b21eeb7322631b6aa94e17f45ceu1a"><style type="text/css" media="screen">#f21ac82b21eeb7322631b6aa94e17f45ceu1a {position:absolute;top:0;left:0;right:auto;bottom:auto;margin:0;padding:0;border:0;width:200px;background:transparent;-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f45ceu1a div{float:left;width:144px;height:17px;line-height:17px;margin:3px 0 0 -2px;background:url(//ecma.bdimg.com/public03/imageplus/tip-back.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip-back.png');font-family:sans-serif;text-align:center;font-size:12px;color:#666;padding:8px 10px;display:none;-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f45ceu1a-icon {float:left;height:38px;width:38px;cursor:default;background:url(//ecma.bdimg.com/public03/imageplus/tip.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip.png');-webkit-box-sizing:content-box;box-sizing:content-box;}#f21ac82b21eeb7322631b6aa94e17f45ceu1a-icon:hover {float:left;height:38px;width:38px;}#f21ac82b21eeb7322631b6aa94e17f45ceu1a #f21ac82b21eeb7322631b6aa94e17f45ceu1a-icon:hover {background:url(//ecma.bdimg.com/public03/imageplus/tip-hover.png) 0 0 no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='//ecma.bdimg.com/public03/imageplus/tip-hover.png');}</style><a href="javascript:void(0);" id="f21ac82b21eeb7322631b6aa94e17f45ceu1a-icon"></a><div id="f21ac82b21eeb7322631b6aa94e17f45ceu1a-msg">查看标识获取更多信息</div></div><style type="text/css" media="screen" id="s-f21ac82b21eeb7322631b6aa94e17f453o7ilwl">.baiduimageplus-s-pa{position:relative;width:100%;height:110px;overflow:hidden;cursor:default;-webkit-transition:top .5s;-moz-transition:top .5s;-ms-transition:top .5s;-o-transition:top .5s;transition:top .5s}.baiduimageplus-s-pa p{background:none}.baiduimageplus-s-pa a{outline:0;text-decoration:none}.baiduimageplus-s-pa a:hover{text-decoration:underline}.baiduimageplus-s-pa .baiduimageplus-s-pa-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}.baiduimageplus-s-pa .baiduimageplus-s-pa-ct{position:relative;z-index:2}.baiduimageplus-s-pa .baiduimageplus-s-pa-hd{height:26px;overflow:hidden;line-height:26px}.baiduimageplus-s-pa .baiduimageplus-s-pa-hd .baiduimageplus-s-pa-hd-title-cell{font-size:14px;color:#FFF;height:100%;text-align:center!important;float:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-right:1px solid #FFF}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu{position:relative;overflow:hidden;zoom:1;padding:0;margin:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper{width:90%;height:84px;float:left;overflow:hidden;position:relative;left:5px}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter{height:84px;overflow:hidden;position:absolute;left:0;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell{width:100px;height:72px;overflow:hidden;background-color:#FFF;margin:4px 5px;padding:0;float:left;border:2px solid #000;position:relative}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover{border-color:#d1111c}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover .baiduimageplus-s-pa-bd-lu-title{background-color:#d1111c}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:hover img{-webkit-transform:scale(1.2);-moz-transform:scale(1.2);-ms-transform:scale(1.2);-o-transform:scale(1.2);transform:scale(1.2)}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell img{width:100px;height:50px;display:block;border:0;-webkit-transition:transform .5s;-moz-transition:transform .5s;-ms-transition:transform .5s;-o-transition:transform .5s;transition:transform .5s}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell .baiduimageplus-s-pa-bd-lu-title{position:absolute;font:14px/1.5 arial,sans-serif;bottom:0;left:0;width:100%;height:22px;display:block;line-height:22px;background-color:#000;text-align:center;color:#FFF}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:first-child{margin-left:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .baiduimageplus-s-pa-bd-lu-wrapper .baiduimageplus-s-pa-bd-lu-outter .cell:last-child{margin-right:0}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .ad-widget-imgps-sticker-html-btn{margin-top:5px;height:75px;width:20px;cursor:pointer;-webkit-transition:background .4s;-moz-transition:background .4s;-ms-transition:background .4s;-o-transition:background .4s;transition:background .4s}
+.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_left{width:20px;float:left;background:url(http://ecmb.bdimg.com/public03/imageplus/sticker/leftbtn.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_left:hover{background:#20439d url(http://ecmb.bdimg.com/public03/sticker/leftbtn_hover.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_right{width:20px;float:right;background:url(http://ecmb.bdimg.com/public03/imageplus/sticker/rightbtn.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-bd-lu .adwishbtn_right:hover{background:#20439d url(http://ecmb.bdimg.com/public03/sticker/rightbtn_hover.jpg) no-repeat center center}.baiduimageplus-s-pa .baiduimageplus-s-pa-logo{position:absolute;bottom:0;right:0;z-index:3;height:18px;width:18px;text-indent:-9999px;background:url(http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png) no-repeat left top;background-position:0 0;_filter:progid:dximagetransform.microsoft.alphaimageloader(enabled=true,src="http://cpro.baidustatic.com/cpro/ui/noexpire/img/2.0.1/bg.png",sizingMethod="crop");_background:none}
+.ad-widget-imageplus-sticker{font:12px/1.5 arial,sans-serif;position:absolute;left:0;width:100%;display:none;overflow:hidden;color:#FFF;background:transparent;-webkit-transition:height .5s,top .5s;transition:height .5s,top .5s}.ad-widget-imageplus-sticker div{background:transparent}.ad-widget-imageplus-sticker-cut{display:block}.ad-widget-imageplus-sticker-bg{position:absolute;z-index:1;left:0;top:0;width:100%;height:100%;background:#000!important;box-shadow:2px 2px 4px #000}.ad-widget-imageplus-sticker-bd{position:relative;z-index:2;left:0;top:0;width:100%;overflow:hidden}.ad-widget-imageplus-sticker-close{position:absolute;z-index:3;right:0;top:5px;width:25px;height:25px;line-height:25px;text-decoration:none;text-align:center;font-size:18px;color:#FFF!important}.ad-widget-imageplus-sticker-close:hover{background-color:#000}
+.ad-widget-imageplus-sticker-theme-white{color:#333}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-bg{background:#FFF!important;box-shadow:2px 2px 4px #FFF}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-close{color:#666!important}.ad-widget-imageplus-sticker-theme-white .ad-widget-imageplus-sticker-close:hover{background-color:#FFF!important}.ad-widget-imageplus-sticker-theme-none{color:#333}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-close{color:#666!important}.ad-widget-imageplus-sticker-theme-none .ad-widget-imageplus-sticker-close:hover{background-color:#FFF!important}.ad-widget-imageplus-sticker-theme-none-white{color:#333}
+.ad-widget-imageplus-sticker-theme-none-white .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none-white-2 .ad-widget-imageplus-sticker-bg{background:transparent!important;box-shadow:none}.ad-widget-imageplus-sticker-theme-none-white-2 .ad-widget-imageplus-sticker-close{top:0;text-indent:-9999px;background:url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent}.ad-widget-imageplus-sticker-theme-v2 .ad-big-title{position:relative;top:0;opacity:1;filter:alpha(opacity=100);-webkit-transition:top .5s,opacity .6s;transition:top .5s,opacity .6s}.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-showing .ad-big-title{position:relative;top:-36px;opacity:0;filter:alpha(opacity=0)}.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-showing .ad-widget-imageplus-sticker-bg{top:26px}
+.ad-widget-imageplus-sticker-theme-v2 .ad-widget-imageplus-sticker-close{top:0;text-indent:-9999px;background:url(http://ecma.bdimg.com/public03/imageplus/v2/dock/close.png) no-repeat 0 0 transparent}.ad-widget-imageplus-sticker-thumbnail{font:12px/1.5 arial,sans-serif;position:absolute;right:0;top:0;height:20px;width:100px;overflow:hidden;background:transparent;-webkit-transition:height .5s;-moz-transition:height .5s;-ms-transition:height .5s;-o-transition:height .5s;transition:height .5s;background-color:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000)}.ad-widget-imageplus-sticker-thumbnail a{float:right;width:100px;height:20px;line-height:20px;text-align:center;color:white;background:transparent;text-decoration:none}
+.ad-widget-imageplus-sticker-thumbnail i{width:12px;height:8px;margin-top:6px;margin-left:5px;display:block;float:left;background:url('http://ecma.bdimg.com/adtest/8e547549c94ab88c81b644d5ff63b0d3.png') no-repeat 0 0;background:none \9;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='corp',src='http://ecma.bdimg.com/adtest/8e547549c94ab88c81b644d5ff63b0d3.png')\9}.ad-widget-imageplus-sticker-close-newstyle{top:0;text-indent:-9999px;background:url(http://ecmb.bdimg.com/public03/v2/dock/iconfont-close.png) no-repeat 0 0 transparent!important}.ad-widget-imageplus-sticker-showing .baiduimageplus-s-pa-hd{opacity:0;filter:alpha(opacity=0)}</style><div id="f21ac82b21eeb7322631b6aa94e17f453o7ilwl" data-rendered="true" style="margin: 0px; padding: 0px; border: none; overflow: visible; text-align: left;"><div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-theme-v2 ad-widget-imageplus-sticker-cut" id="w-kn8bzq" style="display: block; top: 845px; height: 109px;">
+<div class="ad-widget-imageplus-sticker ad-widget-imageplus-sticker-wrapper ad-widget-imageplus-sticker-box-showing ad-widget-imageplus-sticker-showing" id="w-kn8bzq-wrapper" style="display: block; top: -1px; height: 110px;">
+<div class="ad-widget-imageplus-sticker-bg" id="w-kn8bzq-background" style="opacity: 0.75;"></div>
+<div class="ad-widget-imageplus-sticker-bd" id="w-kn8bzq-body">
+<div class="baiduimageplus-s-pa" id="w-47gulj">
+<div class="baiduimageplus-s-pa-bg" id="w-47gulj-background"></div>
+<div class="baiduimageplus-s-pa-ct">
+<div class="baiduimageplus-s-pa-hd">
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">一键重装系统</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">网页制作模板</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">中弘股份</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important;">尾盘选股方法</div>
+<div class="baiduimageplus-s-pa-hd-title-cell" style="width: 130px !important; border: none !important;">十大炒股软件</div>
+<div class="baiduimageplus-s-pa-hd-title-cell">尾盘怎么选股</div>
+</div>
+<div class="baiduimageplus-s-pa-bd-lu">
+<div id="w-47gulj-left_btn" class="ad-widget-imgps-sticker-html-btn adwishbtn_left" style="display:none;"></div>
+<div id="w-47gulj-wrapper" class="baiduimageplus-s-pa-bd-lu-wrapper" style="width: 644px !important;">
+<div id="w-47gulj-outter" class="baiduimageplus-s-pa-bd-lu-outter" style="width: 679px !important;">
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k0=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k1=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k2=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k3=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k4=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k5=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=1&amp;mcpm=32641&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=190863498,1713292904&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k0=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k1=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k2=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k3=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k4=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k5=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=1&amp;mcpm=32641&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0">一键重装系统</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k0=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k1=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k2=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k3=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k4=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k5=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=2&amp;mcpm=53834&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=1846728873,2596895879&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k0=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k1=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k2=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k3=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k4=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k5=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=2&amp;mcpm=53834&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0">网页制作模板</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k0=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k1=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k2=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k3=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k4=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k5=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=3&amp;mcpm=34458&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=1335154680,1448034263&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k0=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k1=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k2=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k3=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k4=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k5=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=3&amp;mcpm=34458&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0">中弘股份</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k0=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k1=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k2=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k3=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k4=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k5=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=4&amp;mcpm=80148&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=3226321237,3314944104&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k0=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;k1=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k2=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k3=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k4=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k5=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=4&amp;mcpm=80148&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0">尾盘选股方法</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k0=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k1=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k2=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k3=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k4=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k5=%D6%D0%BA%EB%B9%C9%B7%DD&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=5&amp;mcpm=57113&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=2591542253,3448055853&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k0=%CA%AE%B4%F3%B3%B4%B9%C9%C8%ED%BC%FE&amp;k1=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k2=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k3=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k4=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k5=%D6%D0%BA%EB%B9%C9%B7%DD&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=5&amp;mcpm=57113&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0">十大炒股软件</a>
+</div>
+<div class="cell">
+<a data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k0=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k1=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k2=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k3=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k4=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k5=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=6&amp;mcpm=60840&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0"><img src="./史上最全的CSS hack方式一览(兼容多浏览器)_浏览器兼容教程_CSS_网页制作_脚本之家_files/u=31301567,1380913500&amp;fm=76"></a>
+<a class="baiduimageplus-s-pa-bd-lu-title" data-log="2" data-mid="" target="_blank" href="https://cpro.baidu.com/cpro/ui/uijs.php?adclass=0&amp;app_id=0&amp;c=news&amp;cf=1&amp;ch=0&amp;di=8&amp;expid=9174_9536_9550_9577_9579_9581_9597_9599_80536&amp;fv=9&amp;is_app=0&amp;itm=0&amp;jk=9bbf77e79954b94f&amp;k=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k0=%CE%B2%C5%CC%D4%F5%C3%B4%D1%A1%B9%C9&amp;k1=%B3%B4%B9%C9%C1%F9%BE%E4%BF%DA%BE%F7&amp;k2=%D2%BB%BC%FC%D6%D8%D7%B0%CF%B5%CD%B3&amp;k3=%CD%F8%D2%B3%D6%C6%D7%F7%C4%A3%B0%E5&amp;k4=%D6%D0%BA%EB%B9%C9%B7%DD&amp;k5=%CE%B2%C5%CC%D1%A1%B9%C9%B7%BD%B7%A8&amp;kdi0=8&amp;kdi1=8&amp;kdi2=8&amp;kdi3=8&amp;kdi4=8&amp;kdi5=8&amp;luki=6&amp;mcpm=60840&amp;mscf=600&amp;n=10&amp;ncf=0&amp;nmv=0&amp;nttp=1&amp;p=baidu&amp;q=jb51_cpr&amp;rb=1&amp;rs=1&amp;seller_id=5&amp;sid=4fb95499e777bf9b&amp;ssp2=1&amp;stid=22&amp;t=tpclicked3_hc&amp;td=&amp;tsf=dtp:1&amp;tu=u1893014&amp;u=http%3A%2F%2Fwww%2Ejb51%2Enet%2Fcss%2F493362%2Ehtml&amp;urlid=0">尾盘怎么选股</a>
+</div>
+</div>
+</div>
+<div id="w-47gulj-right_btn" class="ad-widget-imgps-sticker-html-btn adwishbtn_right" style="display:none;"></div>
+</div>
+</div>
+<a class="baiduimageplus-s-pa-logo" title="百度网盟推广" href="http://wangmeng.baidu.com/" target="_blank" data-ignore=""></a>
+<!-- 新增的推广提示 -->
+<div style="position:absolute;left:0px;bottom:0px;width:29px;height:16px;overflow:hidden;z-index:12;background: url(http://ecmb.bdimg.com/public03/imageplus/leftbottom.png) no-repeat;"></div>
+</div>
+</div>
+</div>
+<a class="ad-widget-imageplus-sticker-close " href="http://www.jb51.net/css/493362.html#" id="w-kn8bzq-close">X</a>
+</div>
+<div class="ad-widget-imageplus-sticker-thumbnail" id="w-kn8bzq-thumbnail" style="display: none; top: 934px;">
+<a href="http://www.jb51.net/css/493362.html#" title="点击展开"><i>&nbsp;</i>图片相关信息</a>
+</div></div></div></body></html>
