@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+
+-->
+</body>
+<div class="box">
+    BFC是什么 <br>
+    1内部BOX会垂直排放<br>
+    2内部不会和float box重叠---两列布局<br>
+    3内部box的垂直方向的距离由margin决定 属于同一个bfc的两个相邻bix的margin会发生重叠<br>
+    4计算bfc的高度时，浮动元素也参与计算(清除浮动 haslayout)<br>
+    5BFC就是页面上的一个隔离的独立容器，里面的子元素不会影响到外界的元素，反之也是如此。<br>
+
+    BFC什么时候出现<br>
+    1根元素<br>
+    2float元素部位none<br>
+    3position不为absolute或fixed<br>
+    4onerflow不是为visible<br>
+    5display为inline-block table-cell table-caption flex inline-flex<br>
+</div>
+</html>
