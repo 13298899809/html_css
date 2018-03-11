@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*实现水平居中
+          .box{
+            margin: 0 auto;   居中 这个是必须的，，其它的属性非必须
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            text-align: center;    文字等内容居中
+        }
+        */
+       /* .box{
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            text-align: center;
+        }*/
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            text-align: center;
+            position:fixed;
+            left:50%;
+            top:50%;
+            /*margin-left:-width/2;
+            margin-top:-height/2;*/
+            margin-left:-100px;
+            margin-top:-100px;
+            line-height: 200px;/*文字垂直居中*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        我要从南走到北
+    </div>
+</body>
+</html>
